@@ -50,7 +50,7 @@ const aboutItems = computed(() => [
 			<NuxtLink href="/">
 				<NuxtImg
 					alt=""
-					class="block object-contain"
+					class="block object-contain max-w-15"
 					preload
 					src="/assets/images/logo-without-text.png"
 				/>

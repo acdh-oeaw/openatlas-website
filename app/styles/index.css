@@ -8,7 +8,6 @@
 @plugin "@tailwindcss/typography";
 
 @custom-variant aria-current-page (&[aria-current="page"]);
-@custom-variant dark (&:where([data-ui-color-scheme="dark"], [data-ui-color-scheme="dark"] *));
 
 @layer base {
 	:root {
@@ -27,7 +26,7 @@
 	}
 
 	:root {
-		@apply bg-white font-body text-neutral-950 antialiased dark:bg-neutral-900 dark:text-white;
+		@apply bg-white font-body text-neutral-950 antialiased;
 
 		overflow-wrap: break-word;
 		font-synthesis: none;
@@ -42,17 +41,13 @@
 		color-scheme: light;
 	}
 
-	[data-ui-color-scheme="dark"] {
-		color-scheme: dark;
-	}
-
 	:focus {
 		/** Transparent outline. */
 		@apply outline-hidden;
 	}
 
 	:focus-visible {
-		@apply outline-2 outline-offset-2 outline-neutral-950 dark:outline-white;
+		@apply outline-2 outline-offset-2 outline-neutral-950;
 	}
 
 	:where(blockquote) {

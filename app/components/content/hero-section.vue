@@ -1,23 +1,29 @@
 <script setup lang="ts">
 const props = defineProps<{
-	title: string | null;
-	subtitle: string | null;
-	buttonLinks: Array<{ title: string; link: string }> | null;
-	newsDate: string | null;
-	currentVersion: string | null;
+	buttonLinks?: Array<{ title: string; link: string }> | null;
+	newsDate?: string | null;
+	currentVersion?: string | null;
 	images: Array<{ src: string; alt?: string | undefined }> | null;
+	logo?: string;
+	textCentered?: boolean;
 }>();
 </script>
 
 <template>
 	<div class="grid grid-cols-2 gap-5">
 		<div
-			class="flex flex-col gap-2 [&_h1]:font-heading [&_h1]:text-black [&_h1]:font-medium [&_h1]:text-[2.5rem]/12 [&_h1]:border-none [&_h1]:pb-0 [&_h1]:mb-0"
+			:class="[
+				'flex flex-col gap-2 [&_h1]:font-heading [&_h1]:text-black [&_h1]:font-medium [&_h1]:text-[2.5rem]/12 [&_h1]:border-none [&_h1]:pb-0 [&_h1]:mb-0',
+				{ 'justify-center': props.textCentered },
+			]"
 		>
+			<div v-if="props.logo">
+				<NuxtImg class="block w-44" preload :src="props.logo" />
+			</div>
 			<slot />
 			<div
 				v-if="props.buttonLinks != null && props.buttonLinks.length > 0"
-				class="flex flex-row gap-4 pt-3"
+				class="flex flex-row gap-4"
 			>
 				<div
 					v-if="props.buttonLinks != null && props.buttonLinks.length > 0"
@@ -37,7 +43,7 @@ const props = defineProps<{
 				</div>
 			</div>
 			<NuxtImg
-				v-if="props.images != null"
+				v-if="props.images != null && props.images.length > 1"
 				:alt="props.images[1]?.alt"
 				class="block object-contain my-7"
 				preload
@@ -64,7 +70,7 @@ const props = defineProps<{
 		<NuxtImg
 			v-if="props.images != null"
 			:alt="props.images[0]?.alt"
-			class="block object-contain w-600 h-130"
+			class="block object-contain w-600"
 			preload
 			:src="props.images[0]?.src"
 		/>

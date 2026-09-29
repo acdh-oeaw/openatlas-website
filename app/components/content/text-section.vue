@@ -9,7 +9,7 @@ const props = defineProps<{
 	image?: string;
 	imageSide?: "left" | "right";
 	variant?: "default" | "dark";
-	shadow: boolean;
+	shadow?: boolean;
 	buttons?: Array<ButtonContent>;
 }>();
 </script>

@@ -27,6 +27,7 @@ images:
   - src: /assets/images/feature_bar.svg
 currentVersion: 9.3.0
 newsDate: '2026-05-27'
+textCentered: false
 ---
 # Manage. Visualize. Present.
 
