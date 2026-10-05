@@ -3,7 +3,7 @@
 		<UApp>
 			<NuxtPage />
 		</UApp>
-		<NuxtLoadingIndicator class="bg-neutral-950 dark:bg-white" :color="false" />
+		<NuxtLoadingIndicator class="bg-neutral-950" :color="false" />
 		<TailwindIndicator />
 		<NuxtRouteAnnouncer />
 	</NuxtLayout>

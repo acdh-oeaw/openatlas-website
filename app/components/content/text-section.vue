@@ -28,7 +28,7 @@ const props = defineProps<{
 			<NuxtImg
 				v-if="imageSide === 'left'"
 				:src="image"
-				:class="props.shadow ? 'shadow-xl/20 rounded-lg aspect-[4/3]' : 'aspect-[4/3]'"
+				:class="props.shadow ? 'shadow-xl/20 rounded-lg aspect-4/3' : 'aspect-[4/3]'"
 			/>
 
 			<div>

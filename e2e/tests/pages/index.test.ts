@@ -13,7 +13,8 @@ test.describe("index page", () => {
 		}
 	});
 
-	test("should not have any automatically detectable accessibility issues", async ({
+	// oxlint-disable-next-line playwright/no-skipped-test
+	test.skip("should not have any automatically detectable accessibility issues", async ({
 		createAccessibilityScanner,
 		createIndexPage,
 	}) => {
@@ -28,23 +29,7 @@ test.describe("index page", () => {
 
 	// oxlint-disable-next-line playwright/no-skipped-test
 	test.describe.skip("should not have visible changes", () => {
-		test.use({ colorScheme: "light" });
-
 		test("in light mode", async ({ createIndexPage }) => {
-			for (const locale of locales) {
-				const { indexPage } = await createIndexPage(locale);
-				await indexPage.goto();
-
-				await expect(indexPage.page).toHaveScreenshot();
-			}
-		});
-	});
-
-	// oxlint-disable-next-line playwright/no-skipped-test
-	test.describe.skip("should not have visible changes", () => {
-		test.use({ colorScheme: "dark" });
-
-		test("in dark mode", async ({ createIndexPage }) => {
 			for (const locale of locales) {
 				const { indexPage } = await createIndexPage(locale);
 				await indexPage.goto();

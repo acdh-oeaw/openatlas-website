@@ -4,7 +4,7 @@ import { join } from "node:path";
 import { createUrl } from "@acdh-oeaw/lib";
 import * as v from "valibot";
 
-import { locales } from "@/config/i18n.config";
+import { locales, defaultLocale } from "@/config/i18n.config";
 
 const baseUrl = v.parse(v.pipe(v.string(), v.url()), process.env.NUXT_PUBLIC_APP_BASE_URL);
 
@@ -39,7 +39,16 @@ export default defineLazyEventHandler(async () => {
 	const entries: Array<{ url: string; lastModified?: Date }> = locales.flatMap((locale) => {
 		return routes.map((pathname) => {
 			return {
-				url: String(createUrl({ baseUrl, pathname: `/${locale}${pathname}` })),
+				url: String(
+					createUrl({
+						baseUrl,
+						pathname:
+							locale === defaultLocale
+								? pathname
+								: // oxlint-disable-next-line typescript/restrict-template-expressions
+									`/${locale}${pathname}`,
+					}),
+				),
 			};
 		});
 	});

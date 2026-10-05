@@ -45,6 +45,7 @@ useHead({
 	meta: computed(() => {
 		const meta = [
 			{ name: "description", content: t("DefaultLayout.meta.description") },
+			{ name: "color-scheme", content: "light" },
 			{ property: "og:type", content: "website" },
 			{ property: "og:title", content: t("DefaultLayout.meta.title") },
 			{ property: "og:site_name", content: t("DefaultLayout.meta.title") },
@@ -58,9 +59,6 @@ useHead({
 					}),
 				),
 			},
-			{ name: "twitter:card", content: "summary_large_image" },
-			{ name: "twitter:creator", content: t("DefaultLayout.meta.twitter") },
-			{ name: "twitter:site", content: t("DefaultLayout.meta.twitter") },
 			...(i18nHead.value.meta ?? []),
 		];
 

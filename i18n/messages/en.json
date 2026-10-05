@@ -32,19 +32,10 @@
 		},
 		"navigation-main": "Main"
 	},
-	"ColorSchemeToggle": {
-		"change-color-scheme": "Change color scheme",
-		"color-schemes": {
-			"dark": "Dark",
-			"light": "Light",
-			"system": "System"
-		}
-	},
 	"DefaultLayout": {
 		"meta": {
-			"description": "ACDH App",
-			"title": "ACDH App",
-			"twitter": "{'@acdh_oeaw'}"
+			"description": "The OpenAtlas Project provides open-source software for various fields of humanities research, including history, archaeology and cultural heritage. Our tools are developed to support researchers and projects with different needs, approaches, and research questions.",
+			"title": "OpenAtlas"
 		},
 		"skip-to-main-content": "Skip to main content"
 	},
@@ -70,14 +61,10 @@
 		},
 		"title": "Home"
 	},
-	"LocaleSwitcher": {
-		"current-locale": "Current language: {locale}",
-		"switch-locale": "Switch language to {locale}"
-	},
 	"Manifest": {
-		"description": "ACDH App",
-		"name": "ACDH App",
-		"short-name": "ACDH App"
+		"description": "The OpenAtlas Project provides open-source software for various fields of humanities research, including history, archaeology and cultural heritage. Our tools are developed to support researchers and projects with different needs, approaches, and research questions.",
+		"name": "OpenAtlas",
+		"short-name": "OpenAtlas"
 	},
 	"NotFoundPage": {
 		"meta": {
