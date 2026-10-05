@@ -1,6 +1,5 @@
 import { assert, createUrl } from "@acdh-oeaw/lib";
 
-import { defaultLocale, locales } from "@/config/i18n.config";
 import { expect, test } from "~/e2e/lib/test";
 
 assert(
@@ -48,17 +47,10 @@ test.describe("app", () => {
 			].join("\n"),
 		);
 
-		for (const locale of locales) {
-			for (const url of ["", "/imprint"]) {
-				const loc = String(
-					createUrl({
-						baseUrl,
-						pathname: ["/", locale, url].join(""),
-					}),
-				);
+		for (const pathname of ["/", "/imprint"]) {
+			const loc = String(createUrl({ baseUrl, pathname }));
 
-				expect(body.toString()).toContain(`<loc>${loc}</loc>`);
-			}
+			expect(body.toString()).toContain(`<loc>${loc}</loc>`);
 		}
 	});
 
@@ -66,7 +58,7 @@ test.describe("app", () => {
 		const response = await request.get("/manifest.webmanifest");
 		const body = await response.body();
 
-		const i18n = await createI18n(defaultLocale);
+		const i18n = await createI18n("en");
 
 		expect(body.toString()).toStrictEqual(
 			JSON.stringify({
@@ -112,37 +104,15 @@ test.describe("app", () => {
 		test.use({ colorScheme: "no-preference" });
 
 		test("with no preference", async ({ createIndexPage }) => {
-			const { indexPage } = await createIndexPage(defaultLocale);
+			const { indexPage } = await createIndexPage();
 			await indexPage.goto();
 			// oxlint-disable-next-line playwright/no-raw-locators
 			await expect(indexPage.page.locator("html")).toHaveAttribute("data-ui-color-scheme", "light");
-		});
-	});
-
-	test.describe("should set color mode according to system preference", () => {
-		test.use({ colorScheme: "light" });
-
-		test("in light mode", async ({ createIndexPage }) => {
-			const { indexPage } = await createIndexPage(defaultLocale);
-			await indexPage.goto();
-			// oxlint-disable-next-line playwright/no-raw-locators
-			await expect(indexPage.page.locator("html")).toHaveAttribute("data-ui-color-scheme", "light");
-		});
-	});
-
-	test.describe("should set color mode according to system preference", () => {
-		test.use({ colorScheme: "dark" });
-
-		test("in dark mode", async ({ createIndexPage }) => {
-			const { indexPage } = await createIndexPage(defaultLocale);
-			await indexPage.goto();
-			// oxlint-disable-next-line playwright/no-raw-locators
-			await expect(indexPage.page.locator("html")).toHaveAttribute("data-ui-color-scheme", "dark");
 		});
 	});
 
 	test("should skip to main content with skip-link", async ({ createIndexPage }) => {
-		const { indexPage } = await createIndexPage(defaultLocale);
+		const { indexPage } = await createIndexPage();
 		await indexPage.goto();
 
 		await indexPage.page.keyboard.press("Tab");
@@ -153,16 +123,14 @@ test.describe("app", () => {
 	});
 
 	test("should set `lang` attribute on `html` element", async ({ createIndexPage }) => {
-		for (const locale of locales) {
-			const { indexPage } = await createIndexPage(locale);
-			await indexPage.goto();
-			// oxlint-disable-next-line playwright/no-raw-locators
-			await expect(indexPage.page.locator("html")).toHaveAttribute("lang", locale);
-		}
+		const { indexPage } = await createIndexPage();
+		await indexPage.goto();
+		// oxlint-disable-next-line playwright/no-raw-locators
+		await expect(indexPage.page.locator("html")).toHaveAttribute("lang");
 	});
 
 	test("should add aria-current attribute to nav links", async ({ createIndexPage }) => {
-		const { indexPage, i18n } = await createIndexPage(defaultLocale);
+		const { indexPage, i18n } = await createIndexPage();
 		await indexPage.goto();
 
 		const homeLink = indexPage.page

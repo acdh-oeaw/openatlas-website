@@ -71,7 +71,7 @@ export const test = base.extend<Fixtures>({
 	async createIndexPage({ page }, use) {
 		async function createIndexPage(locale = defaultLocale) {
 			const i18n = await createI18n(page, locale);
-			const indexPage = new IndexPage(page, locale, i18n);
+			const indexPage = new IndexPage(page);
 			return { i18n, indexPage };
 		}
 
