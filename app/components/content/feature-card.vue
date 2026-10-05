@@ -2,13 +2,15 @@
 const props = defineProps<{
 	tags: Array<string>;
 	image?: string;
+	color: boolean;
 }>();
 </script>
 
 <template>
-	<section class="pt-8 group relative w-full max-w-md">
+	<section class="pt-8 group relative w-full">
 		<div
-			class="overflow-hidden rounded-2xl bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+			class="overflow-hidden rounded-2xl shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg h-full"
+			:class="props.color ? 'bg-primary/20' : 'bg-white'"
 		>
 			<div v-if="props.image" class="relative aspect-[4/3] overflow-hidden">
 				<NuxtImg

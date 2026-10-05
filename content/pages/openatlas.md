@@ -47,7 +47,7 @@ image: /assets/images/openatlas-schema.png
 ascpectVideo: true
 reverse: true
 ---
-## The Model
+### The Model
 
 The data [model](https://demo.openatlas.eu/overview/model) specifies the structure in which the information is stored within the database. The use of an ontology, for example, allows the data to be combined more easily with information from other projects and is consistent with the FAIR principles. The OpenAtlas Model is based on the international standard of [CIDOC CRM](https://www.cidoc-crm.org/), an ontology widely used within the field of humanities.
 
@@ -62,7 +62,7 @@ The data [model](https://demo.openatlas.eu/overview/model) specifies the structu
 ---
 
 ::software-feature-small{shadow image="/assets/images/map.jpg" ascpect-video}
-## Interactive Map
+### Interactive Map
 
 Places with known location can be entered into an interactive map based on [Leaflet](https://leafletjs.com/), which features different view layers, allows for zooming, fullscreen mode, clustering, searching and much more. PostGIS is used for creating and manipulating spatial data. Therefore, it is possible to enter location as needed as multiple points, lines, areas and shapes.
 ::

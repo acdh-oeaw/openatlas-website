@@ -34,26 +34,26 @@ And it's **configurable**: You can customize the page itself using the integrate
 
 OpenAtlas Discovery consists of two parts: Firstly, the **pages that showcase your research data** provided and designed by us and secondly, the **pages that are customizable using an integrated Content Management System (CMS)**, such as the page where you introduce your project team or even the landing page.
 
-::software-feature-small{image="/assets/images/hero-discovery-2.png" reverse ascpect-video}
-### Part 1: Visualize your Instance
+::feature-grid
+  :::feature-card{color}
+  ### Part 1: Visualize your Instance
 
-The first part of OpenAtlas Discovery presents your research data through core visualizations. These pages are designed and developed by us to provide **a clear, structured, and interactive display of your data**. Depending on the project, this can include visualizations such as maps, networks, and data tables, allowing users to explore the research material in different ways.
-::
+  The first part of OpenAtlas Discovery presents your research data through the core visualizations. These pages are designed and developed by us to provide a **clear, structured, and interactive display of your data**.
 
+  This allows users to explore the research material in different ways. Together, the provided visualizations make complex research data easier to navigate, understand, and explore.
 
+  When [collaborating with us](/work-with-us), we can also develop new visualizations and features tailored to your research, allowing us to present your data in new and innovative ways.
+  :::
 
----
+  :::feature-card{color}
+  ### Part 2: Customize your Instance
 
+  The second part is the customizable website, managed through an integrated Content Management System (CMS).
 
+  The CMS allows you to edit and manage parts of the website without changing the underlying code. OpenAtlas Discovery connects the CMS with [GitHub](https://github.com/), so you can manage your website content using a GitHub account.
 
-::software-feature-small{image="/assets/images/hero-discovery-2.png" ascpect-video}
-### Part 2: Customize your Instance
-
-The second part is the customizable website, managed through an integrated Content Management System (CMS).
-
-The CMS allows you to edit and manage parts of the website without changing the underlying code. OpenAtlas Discovery connects the CMS with [GitHub](https://github.com/), so you can manage your website content using a GitHub account.
-
-Through the CMS, you can **customize the website's visual appearance** and content, including logos, colors, landing pages, team pages, and additional subpages. You can also **configure aspects of the visualizations themselves**, allowing the presentation of your research data to be adapted to the needs of your project.
+  Through the CMS, you can **customize the website's visual appearance and content**, including logos, colors, landing pages, team pages and additional subpages. Moreover, **aspects of the visualizations themselves can be configured**, allowing the presentation of your research data to be adapted to the needs of your project.
+  :::
 ::
 
 ---
@@ -67,6 +67,7 @@ Each visualization provides a different way of exploring and understanding the r
 ::feature-grid
   :::feature-card
   ---
+  color: false
   tags:
     - Icons
     - Movement
@@ -84,6 +85,7 @@ Each visualization provides a different way of exploring and understanding the r
 
   :::feature-card
   ---
+  color: false
   tags:
     - Highlight Connections
   image: /assets/images/network.png
@@ -99,10 +101,11 @@ Each visualization provides a different way of exploring and understanding the r
 
   :::feature-card
   ---
+  color: false
   tags:
     - Overview
     - Quick Access
-  image: /assets/images/Frame 20.png
+  image: /assets/images/data-table-1.png
   ---
   ### The Data Table
 

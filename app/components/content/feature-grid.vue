@@ -1,5 +1,5 @@
 <template>
-	<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+	<div class="flex flex-wrap gap-6 [&>*]:grow [&>*]:basis-[calc((100%-3rem)/3)]">
 		<slot />
 	</div>
 </template>
