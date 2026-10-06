@@ -28,10 +28,6 @@ const imprint = await useFetch(url, {
 
 <template>
 	<!-- oxlint-disable vue/no-v-html -->
-	<div
-		v-if="imprint.data.value"
-		class="prose max-w-3xl dark:prose-invert"
-		v-html="imprint.data.value"
-	/>
+	<div v-if="imprint.data.value" class="prose max-w-3xl" v-html="imprint.data.value" />
 	<!-- oxlint-enable vue/no-v-html -->
 </template>

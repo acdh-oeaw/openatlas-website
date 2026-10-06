@@ -9,6 +9,10 @@ const links = computed(() => {
 			href: { path: "/cooperations" },
 			label: t("AppHeader.links.cooperations"),
 		},
+		"work with us": {
+			href: { path: "/work-with-us" },
+			label: t("AppHeader.links.work"),
+		},
 		team: {
 			href: { path: "/team" },
 			label: t("AppHeader.links.team"),
@@ -24,10 +28,6 @@ const links = computed(() => {
 		publications: {
 			href: { path: "/publications" },
 			label: t("AppHeader.links.publications"),
-		},
-		"work with us": {
-			href: { path: "/work-with-us" },
-			label: t("AppHeader.links.work"),
 		},
 	} satisfies Record<string, { href: NuxtLinkProps["href"]; label: string }>;
 });
@@ -54,6 +54,7 @@ const aboutItems = computed(() => [
 					preload
 					src="/assets/images/logo-without-text.png"
 				/>
+				<span class="sr-only">{{ t("AppHeader.links.home") }}</span>
 			</NuxtLink>
 
 			<nav :aria-label="t('AppHeader.navigation-main')">

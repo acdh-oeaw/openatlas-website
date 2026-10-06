@@ -22,10 +22,6 @@ export default defineNuxtConfig({
 		layoutTransition: false,
 		pageTransition: false,
 	},
-	colorMode: {
-		classSuffix: "",
-		dataValue: "ui-color-scheme",
-	},
 	compatibilityDate: "2026-05-01",
 	components: [{ extensions: [".vue"], path: "components", pathPrefix: false }],
 	content: {
@@ -91,7 +87,6 @@ export default defineNuxtConfig({
 		"@nuxt/image",
 		"@nuxt/scripts",
 		"@nuxt/test-utils",
-		"@nuxtjs/color-mode",
 		"@nuxtjs/i18n",
 		"@vueuse/nuxt",
 		"@nuxt/content",
@@ -153,6 +148,9 @@ export default defineNuxtConfig({
 				"../server/**/*.ts",
 			],
 		},
+	},
+	ui: {
+		colorMode: false,
 	},
 	vite: {
 		build: {

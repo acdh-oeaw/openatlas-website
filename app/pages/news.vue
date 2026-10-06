@@ -1,4 +1,10 @@
 <script setup lang="ts">
+const t = useTranslations();
+
+usePageMetadata({
+	title: t("NewsPage.meta.title"),
+});
+
 const { data: news } = await useAsyncData("news", () =>
 	queryCollection("news").order("date", "DESC").all(),
 );

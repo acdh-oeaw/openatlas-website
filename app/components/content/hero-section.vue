@@ -70,7 +70,7 @@ const props = defineProps<{
 		<NuxtImg
 			v-if="props.images != null"
 			:alt="props.images[0]?.alt"
-			class="block object-contain w-600"
+			class="block object-contain w-600 aspect-square"
 			preload
 			:src="props.images[0]?.src"
 		/>

@@ -36,8 +36,7 @@
 		interpolate-size: allow-keywords;
 	}
 
-	:root,
-	[data-ui-color-scheme="light"] {
+	:root {
 		color-scheme: light;
 	}
 

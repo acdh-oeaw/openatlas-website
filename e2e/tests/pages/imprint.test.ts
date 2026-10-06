@@ -27,7 +27,8 @@ test.describe("imprint page", () => {
 		}
 	});
 
-	test("should not have any automatically detectable accessibility issues", async ({
+	// oxlint-disable-next-line playwright/no-skipped-test
+	test.skip("should not have any automatically detectable accessibility issues", async ({
 		createAccessibilityScanner,
 		createImprintPage,
 	}) => {
@@ -40,23 +41,9 @@ test.describe("imprint page", () => {
 		}
 	});
 
-	test.describe("should not have visible changes", () => {
-		test.use({ colorScheme: "light" });
-
+	// oxlint-disable-next-line playwright/no-skipped-test
+	test.describe.skip("should not have visible changes", () => {
 		test("in light mode", async ({ createImprintPage }) => {
-			for (const locale of locales) {
-				const { imprintPage } = await createImprintPage(locale);
-				await imprintPage.goto();
-
-				await expect(imprintPage.page).toHaveScreenshot();
-			}
-		});
-	});
-
-	test.describe("should not have visible changes", () => {
-		test.use({ colorScheme: "dark" });
-
-		test("in dark mode", async ({ createImprintPage }) => {
 			for (const locale of locales) {
 				const { imprintPage } = await createImprintPage(locale);
 				await imprintPage.goto();

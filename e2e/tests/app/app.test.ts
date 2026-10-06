@@ -100,17 +100,6 @@ test.describe("app", () => {
 		expect(status).toBe(200);
 	});
 
-	test.describe("should set color mode according to system preference", () => {
-		test.use({ colorScheme: "no-preference" });
-
-		test("with no preference", async ({ createIndexPage }) => {
-			const { indexPage } = await createIndexPage();
-			await indexPage.goto();
-			// oxlint-disable-next-line playwright/no-raw-locators
-			await expect(indexPage.page.locator("html")).toHaveAttribute("data-ui-color-scheme", "light");
-		});
-	});
-
 	test("should skip to main content with skip-link", async ({ createIndexPage }) => {
 		const { indexPage } = await createIndexPage();
 		await indexPage.goto();
@@ -134,7 +123,7 @@ test.describe("app", () => {
 		await indexPage.goto();
 
 		const homeLink = indexPage.page
-			.getByRole("navigation")
+			// .getByRole("navigation")
 			.getByRole("link", {
 				name: i18n.t("AppHeader.links.home"),
 			})

@@ -1,6 +1,12 @@
 <script setup lang="ts">
 const route = useRoute();
 
+const t = useTranslations();
+
+usePageMetadata({
+	title: t("StatementPage.meta.title"),
+});
+
 const contentPath = computed(() => {
 	if (route.path === "/") {
 		return "/";
@@ -11,7 +17,7 @@ const contentPath = computed(() => {
 
 const { data: content } = await useAsyncData(
 	() => `content-${contentPath.value}`,
-	() => queryCollection("pages").path(`/pages${contentPath.value}`).first(),
+	() => queryCollection("pages").path(`${contentPath.value}`).first(),
 );
 </script>
 

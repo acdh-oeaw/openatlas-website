@@ -5,7 +5,7 @@ description: If you are interested in a cooperation regarding an open data proje
 
 # Interested in a cooperation?
 
-If you are interested in a cooperation regarding an open data project, feel free to [contact us](mailto:nina.richards@oeaw.ac.at). If possible, please provide some or all of the following information in your email. These help us to assess your project's specific needs and thus enable adequate consulting.
+If you are interested in a cooperation regarding an open data project, feel free to [contact us](mailto\:nina.richards@oeaw.ac.at). If possible, please provide some or all of the following information in your email. These help us to assess your project's specific needs and thus enable adequate consulting.
 
 ::coop-accordion{label="Information"}
 **Project**
@@ -40,7 +40,7 @@ If you are interested in a cooperation regarding an open data project, feel free
 - Presentation website - if requested: the more details provided, the better
 - Long-term archiving in [ARCHE](https://arche.acdh.oeaw.ac.at)
 
-If you have any questions, feel free to [contact us](mailto:nina.richards@oeaw.ac.at).
+If you have any questions, feel free to [contact us](mailto\:nina.richards@oeaw.ac.at).
 ::
 
 Although OpenAtlas is freely available on [GitHub](https://github.com/craws/OpenAtlas), not every project has the internal resources to cover all the aspects needed for successfully using the complex software (e.g. setting up a web server and OpenAtlas itself, updates and backups, development of new features, etc.). It is therefore possible, to cooperate with the OpenAtlas team via the [ACDH](https://www.oeaw.ac.at/acdh), an institute of the [Austrian Academy of Sciences](https://www.oeaw.ac.at/), if budget is available. See current and former cooperations [here](/cooperations). A cooperation allows for the further development of OpenAtlas and within some or all of the following aspects can be covered:

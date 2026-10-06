@@ -23,6 +23,7 @@
 	},
 	"AppHeader": {
 		"links": {
+			"home": "Home",
 			"about": "About",
 			"cooperations": "Cooperations",
 			"team": "Team",
@@ -32,19 +33,10 @@
 		},
 		"navigation-main": "Main"
 	},
-	"ColorSchemeToggle": {
-		"change-color-scheme": "Change color scheme",
-		"color-schemes": {
-			"dark": "Dark",
-			"light": "Light",
-			"system": "System"
-		}
-	},
 	"DefaultLayout": {
 		"meta": {
-			"description": "ACDH App",
-			"title": "ACDH App",
-			"twitter": "{'@acdh_oeaw'}"
+			"description": "The OpenAtlas Project provides open-source software for various fields of humanities research, including history, archaeology and cultural heritage. Our tools are developed to support researchers and projects with different needs, approaches, and research questions.",
+			"title": "OpenAtlas"
 		},
 		"skip-to-main-content": "Skip to main content"
 	},
@@ -70,14 +62,70 @@
 		},
 		"title": "Home"
 	},
-	"LocaleSwitcher": {
-		"current-locale": "Current language: {locale}",
-		"switch-locale": "Switch language to {locale}"
+	"OpenAtlasPage": {
+		"meta": {
+			"title": "OpenAtlas"
+		},
+		"title": "OpenAtlas"
+	},
+	"DiscoveryPage": {
+		"meta": {
+			"title": "OpenAtlas Discovery"
+		},
+		"title": "Discovery"
+	},
+	"CooperationsPage": {
+		"meta": {
+			"title": "Cooperations"
+		},
+		"title": "Cooperations"
+	},
+	"TeamPage": {
+		"meta": {
+			"title": "Team"
+		},
+		"title": "Team"
+	},
+	"EventPage": {
+		"meta": {
+			"title": "Events"
+		},
+		"title": "Events"
+	},
+	"NewsPage": {
+		"meta": {
+			"title": "News"
+		},
+		"title": "News"
+	},
+	"PublicationsPage": {
+		"meta": {
+			"title": "Publications"
+		},
+		"title": "Publications"
+	},
+	"StatementPage": {
+		"meta": {
+			"title": "Mission Statement"
+		},
+		"title": "Mission Statement"
+	},
+	"SoftwarePage": {
+		"meta": {
+			"title": "Software"
+		},
+		"title": "Software"
+	},
+	"WorkWithUsPage": {
+		"meta": {
+			"title": "Work with us!"
+		},
+		"title": "Work with us!"
 	},
 	"Manifest": {
-		"description": "ACDH App",
-		"name": "ACDH App",
-		"short-name": "ACDH App"
+		"description": "The OpenAtlas Project provides open-source software for various fields of humanities research, including history, archaeology and cultural heritage. Our tools are developed to support researchers and projects with different needs, approaches, and research questions.",
+		"name": "OpenAtlas",
+		"short-name": "OpenAtlas"
 	},
 	"NotFoundPage": {
 		"meta": {
