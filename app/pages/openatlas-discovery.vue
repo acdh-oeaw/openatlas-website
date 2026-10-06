@@ -11,7 +11,7 @@ const contentPath = computed(() => {
 
 const { data: content } = await useAsyncData(
 	() => `content-${contentPath.value}`,
-	() => queryCollection("pages").path(`/pages${contentPath.value}`).first(),
+	() => queryCollection("pages").path(`${contentPath.value}`).first(),
 );
 </script>
 

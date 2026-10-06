@@ -18,7 +18,7 @@ export default defineContentConfig({
 		pages: defineCollection({
 			type: "page",
 			source: {
-				include: "pages/*.md",
+				include: "*.md",
 			},
 			schema: z.object({
 				title: z.string(),
