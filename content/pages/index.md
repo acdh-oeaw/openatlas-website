@@ -11,7 +11,7 @@ hero:
       link: https://demo.openatlas.eu/
     - title: MANUAL
       link: https://manual.openatlas.eu/
-  newsDate: '2026-05-27'
+  newsDate: 2026-05-27
   currentVersion: 9.3.0
   images:
     - src: /assets/images/hero_image.jpg
@@ -23,24 +23,19 @@ hero:
 ::hero-section
 ---
 images:
-  - src: /assets/images/hero_image.jpg
+  - src: /assets/images/hero-index.png
   - src: /assets/images/feature_bar.svg
+textCentered: true
 currentVersion: 9.3.0
-newsDate: '2026-05-27'
-textCentered: false
+newsDate: 2026-05-27
 ---
 # Manage. Visualize. Present.
 
-The OpenAtlas Project provides open-source software for various fields of humanities research, including **history**, **archaeology** and **cultural heritage**.
-Our tools are developed to support researchers and projects with different needs, approaches, and research questions.
-
-Explore our software below and discover the possibilities for your research project.
+The OpenAtlas Project provides open-source software for various fields of humanities research, including **history**, **archaeology** and **cultural heritage**. brbr Our tools are developed to support researchers and projects with different needs, approaches, and research questions. Explore our software below and discover the possibilities for your research project.
 ::
 
 ::software-feature
 ---
-logo: /assets/images/oad-logo.svg
-image: /assets/images/model1.png
 buttonLinks:
   - title: LEARN MORE
     link: /openatlas
@@ -48,6 +43,8 @@ buttonLinks:
     link: https://demo.openatlas.eu/
   - title: MANUAL
     link: https://manual.openatlas.eu/
+image: /assets/images/model1.png
+logo: /assets/images/oad-logo.svg
 ---
 ## Manage your Research Data
 
@@ -61,17 +58,17 @@ buttonLinks:
     link: /openatlas-discovery
   - title: LIVE DEMO
     link: https://discovery-demo.openatlas.eu/
+reverse: true
 image: /map-movements2.png
 logo: /assets/images/logo-with-text-light.svg
-reverse: true
 ---
 ## Visualize your Research Data
 
-OpenAtlas Discovery is a presentation site template that is designed to make your research data **accessible**, **visual** and **configurable**.  
+OpenAtlas Discovery is a presentation site template that is designed to make your research data **accessible**, **visual** and **configurable**. brbr :br:br
 It enables data managed in OpenAtlas to be presented through various visualizations and tailored to the needs of individual projects — without requiring technical expertise.
 ::
 
-## 
+##
 
 ::text-section
 ---
@@ -92,16 +89,21 @@ variant: dark
 Although our software is freely available on [GitHub](https://github.com/craws/OpenAtlas), not every project has the internal resources to cover all the aspects needed for successfully using the complex software (e.g. setting up a web server and OpenAtlas itself, updates and backups, development of new features, etc.). It is therefore possible, to cooperate with the OpenAtlas team via the [ACDH](https://www.oeaw.ac.at/acdh), an institute of the [Austrian Academy of Sciences](https://www.oeaw.ac.at/), if budget is available. Discover our current and former cooperations [here](/cooperations).
 ::
 
-::text-section{image="/assets/images/work-together.png" imageSide="right" variant="default"}
+::text-section
+---
+image: /assets/images/work-together.png
+image-side: right
+variant: default
+---
 ## How does OpenAtlas and OpenAtlas Discovery work together?
 
 Researchers manage their research data using an OpenAtlas instance and can then connect their Discovery instance via the API. This allows the data collected and structured in OpenAtlas to be made accessible and presented through OpenAtlas Discovery. Since the system uses [CIDOC-CRM](https://cidoc-crm.org/) as an ontology, both data input and output can be adapted to different research projects, datasets, and use cases.
 
-The first step in setting up an OpenAtlas Discovery instance as a researcher is configuring it via the integrated Content-Management-System (in short CMS). Through the CMS, researchers can customize the appearance and structure of their Discovery instance according to the needs of their project. The layout, colors, displayed content, and even the main visualizations can be individually configured.   
+The first step in setting up an OpenAtlas Discovery instance as a researcher is configuring it via the integrated Content-Management-System (in short CMS). Through the CMS, researchers can customize the appearance and structure of their Discovery instance according to the needs of their project. The layout, colors, displayed content, and even the main visualizations can be individually configured. brbr :br:br
 The data visualizations are automatically rendered, allowing the research data to be displayed in an accessible and engaging way and presented directly to the intended audience.
 ::
 
-## 
+##
 
 ::logo-list
 ---
@@ -127,5 +129,5 @@ logos:
   - image: /assets/images/fwf.png
     href: https://www.fwf.ac.at/
 ---
-OpenAtlas was and is funded by several [cooperations](https://openatlas.eu/projects){.text-secondary.fw-bold}, grants, institutes and departments:
+OpenAtlas was and is funded by several [cooperations](https://openatlas.eu/projects), grants, institutes and departments:
 ::
