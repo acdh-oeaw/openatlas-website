@@ -89,6 +89,7 @@ export default defineContentConfig({
 					.array(
 						z.object({
 							imageSource: z.string(),
+							imageLink: z.string().optional(),
 						}),
 					)
 					.optional(),

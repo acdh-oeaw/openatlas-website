@@ -3,7 +3,7 @@ title: OpenAtlas
 hero:
   title: Easily Manage your Research Data
   subtitle: |
-    OpenAtlas is an open source database software developed especially to acquire, edit and manage research data from various fields of humanities like history, archaeology and cultural heritage as well as related scientific data. 
+    OpenAtlas is an open source database software developed especially to acquire, edit and manage research data from various fields of humanities like history, archaeology and cultural heritage as well as related scientific data.
   buttonLinks:
     - title: GET STARTED
       link: https://github.com/craws/OpenAtlas/blob/main/install.md#installation-notes
@@ -100,7 +100,7 @@ variant: default
 ---
 ## How does OpenAtlas and OpenAtlas Discovery work together?
 
-Researchers manage their research data using an OpenAtlas instance and can then connect their Discovery instance via the API. This allows the data collected and structured in OpenAtlas to be made accessible and presented through OpenAtlas Discovery. Since the system uses [CIDOC-CRM](https://cidoc-crm.org/) as an ontology, both data input and output can be adapted to different research projects, datasets, and use cases.
+Researchers manage their research data using an OpenAtlas instance and can then connect their Discovery instance via the API. This allows the data collected and structured in OpenAtlas to be made accessible and presented through OpenAtlas Discovery. Since the system uses [CIDOC CRM](https://cidoc-crm.org/) as an ontology, both data input and output can be adapted to different research projects, datasets, and use cases.
 
 The first step in setting up an OpenAtlas Discovery instance as a researcher is configuring it via the integrated Content-Management-System (in short CMS). Through the CMS, researchers can customize the appearance and structure of their Discovery instance according to the needs of their project. The layout, colors, displayed content, and even the main visualizations can be individually configured.
 
