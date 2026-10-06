@@ -23,6 +23,7 @@
 	},
 	"AppHeader": {
 		"links": {
+			"home": "Home",
 			"about": "About",
 			"cooperations": "Cooperations",
 			"team": "Team",

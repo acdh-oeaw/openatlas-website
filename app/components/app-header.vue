@@ -54,6 +54,7 @@ const aboutItems = computed(() => [
 					preload
 					src="/assets/images/logo-without-text.png"
 				/>
+				<span class="sr-only">{{ t("AppHeader.links.home") }}</span>
 			</NuxtLink>
 
 			<nav :aria-label="t('AppHeader.navigation-main')">

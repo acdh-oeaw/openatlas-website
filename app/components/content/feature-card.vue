@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const props = defineProps<{
-	tags: Array<string>;
+	tags?: Array<string>;
 	image?: string;
 	color: boolean;
 }>();
@@ -12,7 +12,7 @@ const props = defineProps<{
 			class="overflow-hidden rounded-2xl shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg h-full"
 			:class="props.color ? 'bg-primary/20' : 'bg-white'"
 		>
-			<div v-if="props.image" class="relative aspect-[4/3] overflow-hidden">
+			<div v-if="props.image" class="relative aspect-4/3 overflow-hidden">
 				<NuxtImg
 					:src="props.image"
 					:alt="props.image"

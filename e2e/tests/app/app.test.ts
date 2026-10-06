@@ -123,7 +123,7 @@ test.describe("app", () => {
 		await indexPage.goto();
 
 		const homeLink = indexPage.page
-			.getByRole("navigation")
+			// .getByRole("navigation")
 			.getByRole("link", {
 				name: i18n.t("AppHeader.links.home"),
 			})
