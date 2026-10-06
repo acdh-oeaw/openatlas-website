@@ -1,4 +1,10 @@
 <script setup lang="ts">
+const t = useTranslations();
+
+usePageMetadata({
+	title: t("DiscoveryPage.title"),
+});
+
 const route = useRoute();
 
 const contentPath = computed(() => {

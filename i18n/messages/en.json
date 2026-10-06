@@ -61,6 +61,66 @@
 		},
 		"title": "Home"
 	},
+	"OpenAtlasPage": {
+		"meta": {
+			"title": "OpenAtlas"
+		},
+		"title": "OpenAtlas"
+	},
+	"DiscoveryPage": {
+		"meta": {
+			"title": "OpenAtlas Discovery"
+		},
+		"title": "Discovery"
+	},
+	"CooperationsPage": {
+		"meta": {
+			"title": "Cooperations"
+		},
+		"title": "Cooperations"
+	},
+	"TeamPage": {
+		"meta": {
+			"title": "Team"
+		},
+		"title": "Team"
+	},
+	"EventPage": {
+		"meta": {
+			"title": "Events"
+		},
+		"title": "Events"
+	},
+	"NewsPage": {
+		"meta": {
+			"title": "News"
+		},
+		"title": "News"
+	},
+	"PublicationsPage": {
+		"meta": {
+			"title": "Publications"
+		},
+		"title": "Publications"
+	},
+	"StatementPage": {
+		"meta": {
+			"title": "Mission Statement"
+		},
+		"title": "Mission Statement"
+	},
+	"SoftwarePage": {
+		"meta": {
+			"title": "Software"
+		},
+		"title": "Software"
+	},
+	"WorkWithUsPage": {
+		"meta": {
+			"title": "Work with us!"
+		},
+		"title": "Work with us!"
+	},
 	"Manifest": {
 		"description": "The OpenAtlas Project provides open-source software for various fields of humanities research, including history, archaeology and cultural heritage. Our tools are developed to support researchers and projects with different needs, approaches, and research questions.",
 		"name": "OpenAtlas",

@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import TeamMember from "@/components/team-member.vue";
+const t = useTranslations();
 
+usePageMetadata({
+	title: t("TeamPage.meta.title"),
+});
 const route = useRoute();
 
 const contentPath = computed(() => {

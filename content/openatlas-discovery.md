@@ -1,6 +1,6 @@
 ---
 title: OpenAtlas Discovery
-description: '#default'
+description: "#default"
 ---
 
 ::hero-section
@@ -13,7 +13,7 @@ images:
 textCentered: true
 logo: /assets/images/logo-with-text-light.svg
 ---
-# Visualize and explore  your research data
+# Visualize and explore your research data
 
 OpenAtlas Discovery transforms complex research data into an **accessible, visual, and configurable presentation platform**. Explore your data through interactive maps, networks, and tables, while customizing the look and content of your website through an integrated CMS.
 

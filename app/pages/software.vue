@@ -1,7 +1,11 @@
 <script setup lang="ts">
 import SoftwareCard from "@/components/software-card.vue";
-import TeamMember from "@/components/team-member.vue";
 
+const t = useTranslations();
+
+usePageMetadata({
+	title: t("SoftwarePage.meta.title"),
+});
 const route = useRoute();
 
 const contentPath = computed(() => {

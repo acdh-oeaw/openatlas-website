@@ -1,5 +1,10 @@
 <script setup lang="ts">
 const route = useRoute();
+const t = useTranslations();
+
+usePageMetadata({
+	title: t("WorkWithUsPage.meta.title"),
+});
 
 const contentPath = computed(() => {
 	if (route.path === "/") {

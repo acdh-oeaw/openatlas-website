@@ -1,4 +1,10 @@
 <script setup lang="ts">
+const t = useTranslations();
+
+usePageMetadata({
+	title: t("OpenAtlasPage.meta.title"),
+});
+
 const route = useRoute();
 
 const contentPath = computed(() => {

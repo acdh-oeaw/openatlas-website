@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import ProjectCard from "@/components/project-card.vue";
-import SoftwareCard from "@/components/software-card.vue";
+const t = useTranslations();
+
+usePageMetadata({
+	title: t("CooperationsPage.meta.title"),
+});
 
 const route = useRoute();
 
