@@ -7,14 +7,14 @@ const props = defineProps<{
 </script>
 
 <template>
-	<section v-if="props.software">
+	<section v-if="props.software" class="py-2">
 		<div class="grid gap-6 md:grid-cols-[auto_1fr]">
 			<div class="mb-5">
 				<NuxtImg
 					v-if="props.software.image"
 					:src="props.software.image"
 					:alt="props.software.name"
-					class="w-40 h-fit object-cover"
+					class="w-40 h-fit object-contain"
 				/>
 			</div>
 

@@ -24,7 +24,7 @@ const { data: software } = await useAsyncData(
 <template>
 	<MainContent class="container grid content-start py-8">
 		<h1 class="font-heading text-4xl font-medium pb-5 border-b border-neutral-300">Software</h1>
-		<div class="font-heading">
+		<div class="font-heading py-8">
 			OpenAtlas uses solely open source technology. It is and always will be free of charge and open
 			source to guarantee continued usage. The code is freely available on
 			<NuxtLink
