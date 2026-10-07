@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const props = defineProps<{
-	buttonLinks?: Array<{ title: string; link: string }> | null;
+	buttonLinks?: Array<{ title: string; link: string; icon?: string }> | null;
 	newsDate?: string | null;
 	currentVersion?: string | null;
 	images: Array<{ src: string; alt?: string | undefined }> | null;
@@ -31,6 +31,7 @@ const props = defineProps<{
 				>
 					<div v-for="(button, index) in buttonLinks" :key="button.title">
 						<UButton
+							:leading-icon="button.icon"
 							color="neutral"
 							class="border uppercase"
 							:variant="index % 2 === 0 ? 'outline' : 'solid'"

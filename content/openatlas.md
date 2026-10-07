@@ -5,10 +5,11 @@ title: OpenAtlas
 ::hero-section
 ---
 buttonLinks:
-  - title: GET STARTED
-    link: https://github.com/craws/OpenAtlas/blob/main/install.md#installation-notes
   - title: LIVE DEMO
     link: https://demo.openatlas.eu/
+  - title: GitHub
+    link: https://github.com/craws/OpenAtlas
+    icon: i-mdi:github
   - title: MANUAL
     link: https://manual.openatlas.eu/
 images:

@@ -8,6 +8,9 @@ description: "#default"
 buttonLinks:
   - title: LIVE DEMO
     link: https://discovery-demo.openatlas.eu
+  - title: Github
+    link: https://github.com/acdh-oeaw/openatlas-discovery
+    icon: i-mdi:github
 images:
   - src: /assets/images/hero-discovery-2.png
 textCentered: true

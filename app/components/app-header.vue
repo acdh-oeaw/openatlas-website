@@ -42,6 +42,19 @@ const aboutItems = computed(() => [
 		to: "/openatlas-discovery",
 	},
 ]);
+
+const githubItems = computed(() => [
+	{
+		label: "OpenAtlas",
+		to: "https://github.com/craws/OpenAtlas",
+		target: "_blank",
+	},
+	{
+		label: "OpenAtlas Discovery",
+		to: "https://github.com/acdh-oeaw/openatlas-discovery",
+		target: "_blank",
+	},
+]);
 </script>
 
 <template>
@@ -79,15 +92,15 @@ const aboutItems = computed(() => [
 					</li>
 
 					<li>
-						<NuxtLink target="_blank" href="https://github.com/craws/OpenAtlas">
+						<UDropdownMenu :items="githubItems" class="inline-flex" size="lg" :arrow="true">
 							<NuxtImg
 								alt=""
 								preload
-								class="size-7"
+								class="size-7 cursor-pointer m-0 inline-block p-0 font-heading leading-normal opacity-80 transition-opacity hover:opacity-100"
 								src="/assets/images/GitHub_Invertocat_Black.png"
 							/>
 							<span class="sr-only">Link to Github</span>
-						</NuxtLink>
+						</UDropdownMenu>
 					</li>
 				</ul>
 			</nav>

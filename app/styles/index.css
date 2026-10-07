@@ -115,7 +115,7 @@
 	}
 
 	h2 {
-		@apply font-heading text-7xl font-bold tracking-tight leading-tight;
+		@apply font-heading text-7xl font-bold tracking-tight leading-tight mb-2;
 	}
 
 	h3 {
