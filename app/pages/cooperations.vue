@@ -185,12 +185,13 @@ const filterCount = computed(() => selectedStatus.value.length + selectedDomains
 
 		<div v-if="projects != null && projects.length > 0">
 			<ProjectCard
-				v-for="item in filteredProjects"
+				v-for="(item, index) in filteredProjects"
 				:project="item"
 				:selected-status="selectedStatus"
 				:selected-domains="selectedDomains"
 				:key="item.id"
 				class="mb-7"
+				:class="index === filteredProjects.length - 1 ? '' : 'border-b border-black/10'"
 			></ProjectCard>
 		</div>
 	</MainContent>

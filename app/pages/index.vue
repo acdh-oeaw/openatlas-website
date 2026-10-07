@@ -22,7 +22,7 @@ const { data: content } = await useAsyncData(
 </script>
 
 <template>
-	<MainContent class="grid content-start py-8">
+	<MainContent class="grid content-start pb-8">
 		<template v-if="content != null">
 			<div class="container">
 				<ContentRenderer v-if="content.body" :value="content.body" />

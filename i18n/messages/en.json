@@ -1,7 +1,9 @@
 {
 	"AppFooter": {
 		"links": {
-			"about": "About",
+			"home": "Home",
+			"openatlas": "OpenAtlas",
+			"openatlasDiscovery": "OpenAtlas Discovery",
 			"cooperations": "Cooperations",
 			"team": "Team",
 			"events": "Events",

@@ -2,6 +2,7 @@
 import type { NuxtLinkProps } from "#app";
 
 const t = useTranslations();
+const mobileMenuOpen = ref(false);
 
 const links = computed(() => {
 	return {
@@ -55,6 +56,10 @@ const githubItems = computed(() => [
 		target: "_blank",
 	},
 ]);
+
+const closeMobileMenu = () => {
+	mobileMenuOpen.value = false;
+};
 </script>
 
 <template>
@@ -70,7 +75,7 @@ const githubItems = computed(() => [
 				<span class="sr-only">{{ t("AppHeader.links.home") }}</span>
 			</NuxtLink>
 
-			<nav :aria-label="t('AppHeader.navigation-main')">
+			<nav :aria-label="t('AppHeader.navigation-main')" class="hidden md:block">
 				<ul class="flex items-center gap-4" role="list">
 					<li>
 						<UDropdownMenu :items="aboutItems" class="inline-flex" size="lg" :arrow="true">
@@ -104,6 +109,73 @@ const githubItems = computed(() => [
 					</li>
 				</ul>
 			</nav>
+			<!-- Mobile menu button -->
+			<button
+				type="button"
+				class="inline-flex size-10 items-center justify-center md:hidden"
+				aria-label="Toggle navigation"
+				:aria-expanded="mobileMenuOpen"
+				@click="mobileMenuOpen = !mobileMenuOpen"
+			>
+				<UIcon :name="mobileMenuOpen ? 'i-lucide-x' : 'i-lucide-menu'" class="size-6" />
+			</button>
+		</div>
+		<!-- Mobile side sheet -->
+		<div
+			class="grid transition-[grid-template-rows] duration-300 ease-in-out md:hidden"
+			:class="mobileMenuOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'"
+		>
+			<div class="overflow-hidden">
+				<nav
+					:aria-label="t('AppHeader.navigation-main')"
+					class="container border-t border-b border-black/10 px-4 py-6"
+				>
+					<ul class="flex flex-col gap-5" role="list">
+						<li>
+							<div class="font-heading text-sm opacity-50 mb-3">About</div>
+							<ul class="flex flex-col gap-3 pl-3">
+								<li v-for="item in aboutItems" :key="item.to">
+									<NuxtLinkLocale
+										:href="item.to"
+										class="font-heading text-lg"
+										@click="mobileMenuOpen = false"
+									>
+										{{ item.label }}
+									</NuxtLinkLocale>
+								</li>
+							</ul>
+						</li>
+
+						<div class="container border-t border-black/10"></div>
+						<li v-for="(link, key) of links" :key="key">
+							<NuxtLinkLocale
+								class="font-heading text-lg"
+								:href="link.href"
+								@click="mobileMenuOpen = false"
+							>
+								{{ link.label }}
+							</NuxtLinkLocale>
+						</li>
+
+						<li>
+							<div class="font-heading text-sm opacity-50 mb-3">GitHub</div>
+							<ul class="flex flex-col gap-3 pl-3">
+								<li v-for="item in githubItems" :key="item.to">
+									<a
+										:href="item.to"
+										target="_blank"
+										rel="noopener noreferrer"
+										class="font-heading text-lg"
+										@click="mobileMenuOpen = false"
+									>
+										{{ item.label }}
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 	</header>
 </template>

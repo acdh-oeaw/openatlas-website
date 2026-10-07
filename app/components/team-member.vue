@@ -8,8 +8,8 @@ const props = defineProps<{
 
 <template>
 	<section v-if="props.member">
-		<div class="grid gap-6 md:grid-cols-[auto_1fr]">
-			<div class="mb-5">
+		<div class="grid gap-4 md:gap-6 md:grid-cols-[auto_1fr] py-8 lg:py-0">
+			<div class="md:mb-5">
 				<NuxtImg
 					v-if="props.member.image"
 					:src="props.member.image"
@@ -20,7 +20,7 @@ const props = defineProps<{
 			</div>
 
 			<div class="flex flex-col gap-2 leading-[1.75]">
-				<div class="pb-2">
+				<div class="md:pb-2">
 					<h2 class="text-lg font-semibold">
 						{{ props.member.name }}
 					</h2>

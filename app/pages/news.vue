@@ -41,7 +41,7 @@ const previousYears = computed(() => newsByYear.value.filter((year) => year.valu
 
 		<section v-if="currentYearNews.length" class="pt-8">
 			<div>
-				<article v-for="entry in currentYearNews" :key="entry.id" class="pb-2">
+				<article v-for="entry in currentYearNews" :key="entry.id" class="py-4">
 					<p class="text-sm text-neutral-500">
 						{{ entry.date }}
 					</p>

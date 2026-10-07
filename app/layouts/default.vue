@@ -2,30 +2,19 @@
 import { createUrl, isNonEmptyString, removeTrailingSlash } from "@acdh-oeaw/lib";
 import inter from "@fontsource-variable/inter/files/inter-latin-standard-normal.woff2?url";
 import type { WebSite, WithContext } from "schema-dts";
-
 const env = useRuntimeConfig();
-
 const locale = useLocale();
 const t = useTranslations();
-
 const basePath = removeTrailingSlash(env.app.baseURL);
-
 function withBasePath(pathname: string) {
 	if (basePath.length !== 0) {
 		return `${basePath}${pathname}`;
 	}
-
 	return pathname;
 }
-
 const i18nHead = useLocaleHead();
-
 useHead({
-	htmlAttrs: {
-		lang: computed(() => {
-			return locale.value;
-		}),
-	},
+	htmlAttrs: { lang: computed(() => locale.value) },
 	titleTemplate: computed(() => {
 		return ["%s", t("DefaultLayout.meta.title")].join(" | ");
 	}),
@@ -61,14 +50,12 @@ useHead({
 			},
 			...(i18nHead.value.meta ?? []),
 		];
-
 		if (isNonEmptyString(env.public.app.googleSiteVerification)) {
 			meta.push({
 				name: "google-site-verification",
 				content: env.public.app.googleSiteVerification,
 			});
 		}
-
 		return meta;
 	}),
 	script: computed(() => {
@@ -78,22 +65,17 @@ useHead({
 			name: t("DefaultLayout.meta.title"),
 			description: t("DefaultLayout.meta.description"),
 		};
-
 		return [{ type: "application/ld+json", innerHTML: JSON.stringify(jsonLd, safeJsonLdReplacer) }];
 	}),
 });
 </script>
-
 <template>
-	<div class="grid min-h-full grid-rows-[auto_1fr_auto]">
-		<SkipLink target-id="main-content">
-			{{ t("DefaultLayout.skip-to-main-content") }}
-		</SkipLink>
-
-		<AppHeader />
-		<ErrorBoundary>
-			<slot />
-		</ErrorBoundary>
-		<AppFooter />
+	<div class="flex min-h-screen flex-col overflow-x-hidden">
+		<SkipLink target-id="main-content"> {{ t("DefaultLayout.skip-to-main-content") }} </SkipLink>
+		<AppHeader class="shrink-0" />
+		<main id="main-content" class="min-w-0 flex-1">
+			<ErrorBoundary> <slot /> </ErrorBoundary>
+		</main>
+		<AppFooter class="shrink-0" />
 	</div>
 </template>

@@ -21,21 +21,22 @@ const props = defineProps<{
 	>
 		<div
 			:class="[
-				'grid md:grid-cols-2 gap-12 items-center p-4',
+				'grid lg:grid-cols-2 md:gap-12 gap-4 items-center p-4',
 				variant === 'dark' && 'container grid md:grid-cols-[1fr_auto] my-10',
 			]"
 		>
+			<!-- Left image -->
 			<NuxtImg
 				v-if="imageSide === 'left'"
 				:src="image"
+				class="order-2 md:order-1"
 				:class="props.shadow ? 'shadow-xl/20 rounded-lg aspect-4/3' : 'aspect-[4/3]'"
 			/>
-
-			<div>
+			<!-- Text -->
+			<div class="order-1" :class="imageSide === 'right' ? 'md:order-1' : 'md:order-2'">
 				<slot />
-
 				<div v-if="props.buttons && props.buttons.length > 0">
-					<div class="flex flex-row gap-4 pt-4">
+					<div class="flex flex-row flex-wrap md:flex-nowrap gap-4 lg:pt-4 pt-6">
 						<LazyUButton
 							v-for="button in props.buttons"
 							:key="button.title"
@@ -53,10 +54,11 @@ const props = defineProps<{
 					</div>
 				</div>
 			</div>
-
+			<!-- Right image -->
 			<NuxtImg
 				v-if="imageSide === 'right'"
 				:src="image"
+				class="order-2 md:order-2"
 				:class="
 					props.shadow
 						? 'shadow-xl/20 rounded-lg w-700 aspect-4/3 object-contain'

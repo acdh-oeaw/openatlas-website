@@ -11,8 +11,8 @@ const props = defineProps<{
 
 <template>
 	<section v-if="props.project">
-		<div class="grid gap-20 md:grid-cols-[auto_1fr]">
-			<div class="mb-5 flex flex-col items-center">
+		<div class="grid gap-6 md:gap-20 md:grid-cols-[auto_1fr] py-8">
+			<div class="mb-5 flex flex-col lg:items-center">
 				<NuxtImg
 					v-if="props.project.image"
 					:src="props.project.image"
@@ -52,12 +52,12 @@ const props = defineProps<{
 
 					<div
 						v-if="props.project.logos && props.project.logos.length > 0"
-						class="relative flex flex-row gap-6 mt-6"
+						class="relative flex flex-wrap md:flex-row gap-6 mt-8"
 					>
 						<div
 							v-for="logo in props.project.logos"
 							:key="logo.imageSource"
-							class="h-10 flex items-center justify-center rounded bg-white"
+							class="h-10 flex items-center md:justify-center rounded bg-white"
 						>
 							<NuxtImg
 								:src="logo.imageSource"
@@ -67,7 +67,7 @@ const props = defineProps<{
 						</div>
 					</div>
 
-					<div class="flex flex-wrap gap-2 mt-6">
+					<div class="flex flex-wrap gap-2 mt-8">
 						<div
 							v-for="tag in project?.statusTags"
 							:key="tag"

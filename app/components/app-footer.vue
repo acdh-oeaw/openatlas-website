@@ -2,12 +2,14 @@
 import { MailIcon } from "@lucide/vue";
 
 import type { NuxtLinkProps } from "#app";
-
 const t = useTranslations();
-
 const contentLinks = computed(() => {
 	return {
-		about: { href: { path: "/" }, label: t("AppFooter.links.about") },
+		openatlas: { href: { path: "/openatlas" }, label: t("AppFooter.links.openatlas") },
+		openatlasDiscovery: {
+			href: { path: "/openatlas-discovery" },
+			label: t("AppFooter.links.openatlasDiscovery"),
+		},
 		cooperations: { href: { path: "/cooperations" }, label: t("AppFooter.links.cooperations") },
 		team: { href: { path: "/team" }, label: t("AppFooter.links.team") },
 		events: { href: { path: "/events" }, label: t("AppFooter.links.events") },
@@ -39,7 +41,6 @@ const documentationLinks = computed(() => {
 		},
 	} satisfies Record<string, { href: NuxtLinkProps["href"]; label: string }>;
 });
-
 const demoLinks = computed(() => {
 	return {
 		demo: { href: { path: "https://demo.openatlas.eu/" }, label: t("AppFooter.links.demo") },
@@ -50,12 +51,12 @@ const demoLinks = computed(() => {
 	} satisfies Record<string, { href: NuxtLinkProps["href"]; label: string }>;
 });
 </script>
-
 <template>
-	<footer class="bg-black/90 text-white font-heading">
-		<div class="container py-8 w-full">
+	<footer class="bg-black/90 font-heading text-white">
+		<div class="container w-full py-8">
 			<nav :aria-label="t('AppFooter.navigation-secondary')">
-				<div class="grid grid-cols-[auto_auto_auto_1fr] gap-40 max-w-full">
+				<div class="grid grid-cols-1 gap-8 md:grid-cols-[auto_auto_auto_1fr] md:gap-40">
+					<!-- Content -->
 					<div class="grid grid-rows-[auto_1fr] gap-4">
 						<span class="font-medium">Content</span>
 						<ul class="flex flex-col gap-2" role="list">
@@ -69,8 +70,9 @@ const demoLinks = computed(() => {
 							</li>
 						</ul>
 					</div>
+					<!-- Documentation -->
 					<div class="grid grid-rows-[auto_1fr] gap-4">
-						<span clasS="font-medium">Documentation</span>
+						<span class="font-medium">Documentation</span>
 						<ul class="flex flex-col gap-2" role="list">
 							<li v-for="(link, key) of documentationLinks" :key="key">
 								<NuxtLink
@@ -84,6 +86,7 @@ const demoLinks = computed(() => {
 							</li>
 						</ul>
 					</div>
+					<!-- Demo -->
 					<div class="grid grid-rows-[auto_1fr] gap-4">
 						<span class="font-medium">Demo Version</span>
 						<ul class="flex flex-col gap-2" role="list">
@@ -99,11 +102,12 @@ const demoLinks = computed(() => {
 							</li>
 						</ul>
 					</div>
-					<div class="grid grid-rows-[auto_1fr] gap-4 ml-auto">
-						<NuxtLink :href="contentLinks.about.href">
+					<!-- Logo / Contact -->
+					<div class="grid grid-rows-[auto_1fr] gap-4 md:ml-auto">
+						<NuxtLink href="/">
 							<NuxtImg
 								alt=""
-								class="block object-contain w-50"
+								class="block w-50 max-w-full object-contain"
 								preload
 								src="/assets/images/oad-logo-dark.png"
 							/>
@@ -112,11 +116,10 @@ const demoLinks = computed(() => {
 							<li>
 								<a
 									href="mailto:openatlas@oeaw.ac.at"
-									class="cursor-pointer font-heading opacity-80 transition-opacity hover:opacity-100 focus-visible:opacity-100 aria-[current]:font-medium aria-[current]:opacity-100"
+									class="cursor-pointer font-heading opacity-80 transition-opacity hover:opacity-100 focus-visible:opacity-100"
 								>
 									<div class="flex flex-row items-center gap-1">
-										<MailIcon :size="16" />
-										<span>openatlas.oeaw.ac.at</span>
+										<MailIcon :size="16" /> <span>openatlas.oeaw.ac.at</span>
 									</div>
 								</a>
 							</li>

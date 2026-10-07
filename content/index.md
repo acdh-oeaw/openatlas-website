@@ -107,6 +107,8 @@ The first step in setting up an OpenAtlas Discovery instance as a researcher is 
 The data visualizations are automatically rendered, allowing the research data to be displayed in an accessible and engaging way and presented directly to the intended audience.
 ::
 
+---
+
 ##
 
 ::logo-list

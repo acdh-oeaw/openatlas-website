@@ -7,7 +7,7 @@ const props = defineProps<{
 </script>
 
 <template>
-	<article v-for="entry in props.events" :key="entry.id" class="py-2">
+	<article v-for="entry in props.events" :key="entry.id" class="py-4">
 		<p class="text-sm text-neutral-500">
 			{{ entry.date }}
 		</p>
