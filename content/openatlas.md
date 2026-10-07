@@ -38,8 +38,6 @@ OpenAtlas is not a stand-alone application but meant to be installed on a Linux 
 
 ---
 
-##
-
 ::software-feature-small
 ---
 ascpectVideo: true

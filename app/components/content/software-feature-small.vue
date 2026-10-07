@@ -13,8 +13,10 @@ const props = defineProps<{
 <template>
 	<div :class="props.color ? 'pt-8' : ''">
 		<section
-			class="py-8 group relative isolate before:absolute before:inset-y-0 before:left-1/2 before:w-screen before:-translate-x-1/2 before:-z-10"
-			:class="props.color ? 'before:bg-primary/20' : ''"
+			class="group relative isolate before:absolute before:inset-y-0 before:left-1/2 before:w-screen before:-translate-x-1/2 before:-z-10"
+			:class="
+				(props.color ? 'before:bg-primary/20' : '') || (props.ascpectVideo ? 'py-0 pb-3' : 'py-8 ')
+			"
 		>
 			<div
 				class="grid items-center gap-2 lg:grid-cols-2 lg:gap-15 z-20"

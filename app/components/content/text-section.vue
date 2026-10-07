@@ -21,8 +21,8 @@ const props = defineProps<{
 	>
 		<div
 			:class="[
-				'grid lg:grid-cols-2 md:gap-12 gap-4 items-center p-4',
-				variant === 'dark' && 'container grid md:grid-cols-[1fr_auto] my-10',
+				'grid lg:grid-cols-2 md:gap-12 gap-4 items-center py-4',
+				variant === 'dark' && 'container px-8 grid md:grid-cols-[1fr_auto] my-10',
 			]"
 		>
 			<!-- Left image -->
@@ -62,7 +62,7 @@ const props = defineProps<{
 				:class="
 					props.shadow
 						? 'shadow-xl/20 rounded-lg w-700 aspect-4/3 object-contain'
-						: 'aspect-4/3 object-contain'
+						: 'aspect-4/3 object-contain mx-auto'
 				"
 			/>
 		</div>
