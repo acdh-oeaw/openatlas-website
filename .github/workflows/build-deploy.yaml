@@ -116,6 +116,7 @@ jobs:
     secrets: inherit
     with:
       environment: ${{ needs.env.outputs.environment }}
+      do_not_generate_additional_host_names: "true"
       DOCKER_TAG: ${{ needs.env.outputs.registry }}/${{ needs.env.outputs.image }}
       APP_NAME: "${{ needs.env.outputs.app_name }}"
       APP_ROOT: "/"
