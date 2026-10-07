@@ -73,9 +73,7 @@ useHead({
 	<div class="flex min-h-screen flex-col overflow-x-hidden">
 		<SkipLink target-id="main-content"> {{ t("DefaultLayout.skip-to-main-content") }} </SkipLink>
 		<AppHeader class="shrink-0" />
-		<main id="main-content" class="min-w-0 flex-1">
-			<ErrorBoundary> <slot /> </ErrorBoundary>
-		</main>
+		<ErrorBoundary> <slot /> </ErrorBoundary>
 		<AppFooter class="shrink-0" />
 	</div>
 </template>
