@@ -127,6 +127,7 @@ export default defineNuxtConfig({
 			branch: "main",
 			rootDir: "content",
 		},
+		route: "/admin",
 		dev: true,
 	},
 	typescript: {
