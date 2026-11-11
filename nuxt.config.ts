@@ -24,9 +24,10 @@ export default defineNuxtConfig({
 	},
 	compatibilityDate: "2026-05-01",
 	components: [
-		{ extensions: [".vue"], path: "components", pathPrefix: false },
 		{
-			path: "~/components/content",
+			extensions: [".vue"],
+			path: "~/app/components",
+			pathPrefix: false,
 			global: true,
 		},
 	],
@@ -132,11 +133,6 @@ export default defineNuxtConfig({
 			repo: "openatlas-website",
 			branch: "main",
 			rootDir: "content",
-		},
-		editor: {
-			components: {
-				include: ["*"],
-			},
 		},
 		git: {
 			commit: {

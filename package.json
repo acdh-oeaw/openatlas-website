@@ -48,7 +48,7 @@
 		"better-sqlite3": "^12.11.1",
 		"module": "^2.0.0",
 		"nuxt": "^4.4.7",
-		"nuxt-studio": "^1.7.0",
+		"nuxt-studio": "^1.8.0",
 		"pino-http": "^11.0.0",
 		"remark-breaks": "^4.0.0",
 		"satori": "^0.26.0",
