@@ -1,6 +1,3 @@
-import { glob } from "node:fs/promises";
-import { join } from "node:path";
-
 import { createUrl } from "@acdh-oeaw/lib";
 import * as v from "valibot";
 
@@ -8,45 +5,31 @@ import { locales, defaultLocale } from "@/config/i18n.config";
 
 const baseUrl = v.parse(v.pipe(v.string(), v.url()), process.env.NUXT_PUBLIC_APP_BASE_URL);
 
+const routePaths = [
+	"/",
+	"/cooperations",
+	"/events",
+	"/imprint",
+	"/mission-statement",
+	"/news",
+	"/openatlas",
+	"/openatlas-discovery",
+	"/publications",
+	"/software",
+	"/team",
+	"/work-with-us",
+] as const;
+
 export default defineLazyEventHandler(async () => {
-	const routes: Array<string> = [];
-
-	for await (const path of glob("./**/*.vue", {
-		cwd: join(process.cwd(), "app", "pages"),
-	})) {
-		const _route = path.slice(0, -".vue".length).replace(/\/?index$/, "");
-		const route = _route.length === 0 ? _route : `/${_route}`;
-
-		const segments = [];
-
-		for (const segment of route.split("/")) {
-			/** Dynamic routes. */
-			if (segment.startsWith("[") && segment.endsWith("]")) {
-				break;
-			}
-
-			/** Route groups. */
-			if (segment.startsWith("(") && segment.endsWith(")")) {
-				continue;
-			}
-
-			segments.push(segment);
-		}
-
-		routes.push(segments.join("/"));
-	}
-
 	const entries: Array<{ url: string; lastModified?: Date }> = locales.flatMap((locale) => {
-		return routes.map((pathname) => {
+		return routePaths.map((pathname) => {
+			const resolvedPath = locale === defaultLocale ? pathname : "/" + locale + pathname;
+
 			return {
 				url: String(
 					createUrl({
 						baseUrl,
-						pathname:
-							locale === defaultLocale
-								? pathname
-								: // oxlint-disable-next-line typescript/restrict-template-expressions
-									`/${locale}${pathname}`,
+						pathname: resolvedPath,
 					}),
 				),
 			};

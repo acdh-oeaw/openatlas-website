@@ -23,7 +23,13 @@ export default defineNuxtConfig({
 		pageTransition: false,
 	},
 	compatibilityDate: "2026-05-01",
-	components: [{ extensions: [".vue"], path: "components", pathPrefix: false }],
+	components: [
+		{ extensions: [".vue"], path: "components", pathPrefix: false },
+		{
+			path: "~/components/content",
+			global: true,
+		},
+	],
 	content: {
 		experimental: { sqliteConnector: "native" },
 		build: {
@@ -127,8 +133,18 @@ export default defineNuxtConfig({
 			branch: "main",
 			rootDir: "content",
 		},
+		editor: {
+			components: {
+				include: ["*"],
+			},
+		},
+		git: {
+			commit: {
+				messagePrefix: "content:",
+			},
+		},
 		route: "/admin",
-		// dev: false,
+		dev: true,
 	},
 	typescript: {
 		shim: false,
