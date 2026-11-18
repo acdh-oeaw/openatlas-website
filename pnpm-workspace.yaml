@@ -11,6 +11,11 @@ allowBuilds:
 
 minimumReleaseAge: 1440
 
+minimumReleaseAgeExclude:
+  - '@nuxt/content@3.17.0'
+  - '@nuxtjs/mdc@0.23.4'
+  - isomorphic-git@1.44.16
+
 overrides:
   sharp: $sharp
 

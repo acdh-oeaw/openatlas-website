@@ -25,9 +25,9 @@ export default defineNuxtConfig({
 	compatibilityDate: "2026-05-01",
 	components: [
 		{
-			extensions: [".vue"],
 			path: "~/app/components/content",
 			pathPrefix: false,
+			extensions: [".vue"],
 			global: true,
 		},
 		{
