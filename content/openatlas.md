@@ -65,3 +65,6 @@ The data [model](https://demo.openatlas.eu/overview/model) specifies the structu
 
 Places with known location can be entered into an interactive map based on [Leaflet](https://leafletjs.com/), which features different view layers, allows for zooming, fullscreen mode, clustering, searching and much more. PostGIS is used for creating and manipulating spatial data. Therefore, it is possible to enter location as needed as multiple points, lines, areas and shapes.
 ::
+
+::gap-block
+::

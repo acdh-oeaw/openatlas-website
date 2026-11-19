@@ -16,12 +16,13 @@ const props = defineProps<{
 <template>
 	<section
 		:class="[
+			'py-8',
 			variant === 'dark' && 'relative left-1/2 -translate-x-1/2 w-screen bg-black/90 text-white',
 		]"
 	>
 		<div
 			:class="[
-				'grid lg:grid-cols-2 md:gap-12 gap-4 items-center py-4',
+				'grid lg:grid-cols-2 md:gap-12 gap-4 items-center py-8',
 				variant === 'dark' && 'container px-8 grid md:grid-cols-[1fr_auto] my-10',
 			]"
 		>
@@ -30,7 +31,7 @@ const props = defineProps<{
 				v-if="imageSide === 'left'"
 				:src="image"
 				class="order-2 md:order-1"
-				:class="props.shadow ? 'shadow-xl/20 rounded-lg aspect-4/3' : 'aspect-[4/3]'"
+				:class="props.shadow ? 'shadow-xl/20 rounded-lg aspect-4/3' : 'aspect-4/3'"
 			/>
 			<!-- Text -->
 			<div class="order-1" :class="imageSide === 'right' ? 'md:order-1' : 'md:order-2'">

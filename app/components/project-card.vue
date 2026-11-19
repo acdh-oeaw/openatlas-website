@@ -91,7 +91,7 @@ const props = defineProps<{
 							:class="
 								selectedStatus.includes(tag)
 									? 'border-neutral-600 bg-neutral-600 text-white'
-									: 'border-neutral-500 text-neutral-600 hover:border-neutral-900 hover:text-neutral-900'
+									: 'border-neutral-500 text-neutral-600'
 							"
 						>
 							{{ tag }}
@@ -105,7 +105,7 @@ const props = defineProps<{
 							:class="
 								selectedDomains.includes(tag)
 									? 'border-neutral-600 bg-neutral-600 text-white'
-									: 'border-neutral-500 text-neutral-600 hover:border-neutral-900 hover:text-neutral-900'
+									: 'border-neutral-500 text-neutral-600'
 							"
 						>
 							{{ tag }}

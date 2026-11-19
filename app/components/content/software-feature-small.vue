@@ -11,7 +11,7 @@ const props = defineProps<{
 </script>
 
 <template>
-	<div :class="props.color ? 'pt-8' : ''">
+	<div class="py-8" :class="props.color ? 'pt-8' : ''">
 		<section
 			class="group relative isolate before:absolute before:inset-y-0 before:left-1/2 before:w-screen before:-translate-x-1/2 before:-z-10"
 			:class="
@@ -23,7 +23,7 @@ const props = defineProps<{
 				:class="{ 'lg:[&>*:first-child]:order-2': reverse }"
 			>
 				<div
-					class="rounded-2xl scale-100 transition-transform duration-[1200ms] ease-out group-hover:scale-[1.05]"
+					class="rounded-2xl scale-100 transition-transform duration-1200ms ease-out group-hover:scale-[1.05]"
 					:class="props.ascpectVideo ? 'aspect-video' : 'h-full'"
 				>
 					<video
@@ -47,7 +47,9 @@ const props = defineProps<{
 				</div>
 
 				<div class="max-w-xl">
-					<div class="[&_h2]:mt-0 [&_h2]:text-4xl pt-2 [&_h2]:text-black">
+					<div
+						class="[&_h2]:mt-0 [&_h2]:text-4xl [&_h2]:text-black [&_h3]:font-heading [&_h3]:text-2xl [&_h3]:font-medium [&_h3]:mt-5 [&_h3]:pb-0! [&_h3]:text-neutral-700!"
+					>
 						<slot />
 					</div>
 

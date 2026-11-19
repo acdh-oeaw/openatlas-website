@@ -102,6 +102,11 @@ The data visualizations are automatically rendered, allowing the research data t
 
 ---
 
+::gap-block
+::
+
+
+
 ::logo-list
 ---
 logos:
@@ -127,4 +132,7 @@ logos:
     href: https://www.fwf.ac.at/
 ---
 OpenAtlas was and is funded by several [cooperations](https://openatlas.eu/projects), grants, institutes and departments:
+::
+
+::gap-block
 ::
