@@ -11,8 +11,7 @@ hero:
       link: https://demo.openatlas.eu/
     - title: MANUAL
       link: https://manual.openatlas.eu/
-  newsDate: '2026-05-27'
-  currentVersion: 9.3.0
+  showNews: true
   images:
     - src: /assets/images/hero_image.jpg
       alt: Hero Image
@@ -25,9 +24,8 @@ hero:
 images:
   - src: /assets/images/hero-index.png
   - src: /assets/images/feature_bar.svg
+showNews: true
 textCentered: true
-currentVersion: 9.3.0
-newsDate: '2026-05-27'
 ---
 # Manage. Visualize. Present.
 
@@ -104,8 +102,6 @@ The data visualizations are automatically rendered, allowing the research data t
 
 ::gap-block
 ::
-
-
 
 ::logo-list
 ---

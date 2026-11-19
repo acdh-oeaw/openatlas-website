@@ -1,12 +1,21 @@
 <script setup lang="ts">
 const props = defineProps<{
 	buttonLinks?: Array<{ title: string; link: string; icon?: string }> | null;
-	newsDate?: string | null;
+	showNews?: boolean;
 	currentVersion?: string | null;
 	images: Array<{ src: string; alt?: string | undefined }> | null;
 	logo?: string;
 	textCentered?: boolean;
 }>();
+
+const { data: latestNews } = await useAsyncData("homepage-latest-news", () =>
+	queryCollection("news").order("date", "DESC").first(),
+);
+
+const latestNewsDate = computed(() => {
+	console.log("Latest news:", latestNews.value);
+	return latestNews.value?.path.match(/(\d{4}-\d{2}-\d{2})/)?.[0];
+});
 </script>
 
 <template>
@@ -48,19 +57,24 @@ const props = defineProps<{
 				:src="props.images[1]?.src"
 			/>
 
-			<div v-if="props.newsDate != null && props.currentVersion != null" class="mt-2">
+			<div v-if="props.showNews && latestNews" class="mt-2">
 				<div class="mb-2 flex flex-row items-center gap-2">
 					<UBadge size="xl" class="bg-primary"> News </UBadge>
-					<span>{{ props.newsDate }}</span>
+					<span>{{ latestNewsDate }}</span>
 				</div>
+
 				<div class="flex flex-wrap items-baseline gap-x-1.5 gap-y-1 md:pb-8">
-					<span>OpenAtlas version</span> <span>{{ props.currentVersion }}</span>
+					<span class="font-medium">
+						{{ latestNews.title }}
+					</span>
+
 					<NuxtLink
-						class="text-sm font-semibold text-primary opacity-80 transition hover:opacity-100"
-						href="/news"
+						v-if="latestNews?.link"
+						:href="latestNews.link"
 						target="_blank"
+						class="mt-2 block transition-opacity hover:opacity-80 cursour-pointer"
 					>
-						read more
+						<span class="text-sm font-semibold text-primary opacity-80"> read more </span>
 					</NuxtLink>
 				</div>
 			</div>
