@@ -58,9 +58,9 @@ const previousYears = computed(() =>
 			<div v-if="upcomingEvents.length" class="pt-8">
 				<p class="text-lg font-medium uppercase tracking-wide pb-4">Upcoming</p>
 				<EventCards :events="upcomingEvents" />
+				<div class="border-b p-3 border-neutral-300"></div>
 			</div>
 
-			<div class="border-b p-3 border-neutral-300"></div>
 			<div v-if="currentYearEvents.length" class="py-6">
 				<EventCards :events="currentYearEvents" />
 			</div>

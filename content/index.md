@@ -11,7 +11,7 @@ hero:
       link: https://demo.openatlas.eu/
     - title: MANUAL
       link: https://manual.openatlas.eu/
-  newsDate: 2026-05-27
+  newsDate: '2026-05-27'
   currentVersion: 9.3.0
   images:
     - src: /assets/images/hero_image.jpg
@@ -27,7 +27,7 @@ images:
   - src: /assets/images/feature_bar.svg
 textCentered: true
 currentVersion: 9.3.0
-newsDate: 2026-05-27
+newsDate: '2026-05-27'
 ---
 # Manage. Visualize. Present.
 
@@ -60,9 +60,9 @@ buttonLinks:
     link: /openatlas-discovery
   - title: LIVE DEMO
     link: https://discovery-demo.openatlas.eu/
-reverse: true
 image: /map-movements2.png
 logo: /assets/images/logo-with-text-light.svg
+reverse: true
 ---
 ## Visualize your Research Data
 
@@ -71,10 +71,10 @@ OpenAtlas Discovery is a presentation site template that is designed to make you
 It enables data managed in OpenAtlas to be presented through various visualizations and tailored to the needs of individual projects — without requiring technical expertise.
 ::
 
-##
-
 ::text-section
 ---
+image: /assets/images/cooperation.png
+variant: dark
 buttons:
   - title: Contact Us
     link: mailto:openatlas@oeaw.ac.at
@@ -83,21 +83,14 @@ buttons:
     link: /collaborate
     outline: true
 shadow: false
-image: /assets/images/cooperation.png
 imageSide: right
-variant: dark
 ---
 ## Interested in a cooperation?
 
 Although our software is freely available on [GitHub](https://github.com/craws/OpenAtlas), not every project has the internal resources to cover all the aspects needed for successfully using the complex software (e.g. setting up a web server and OpenAtlas itself, updates and backups, development of new features, etc.). It is therefore possible, to cooperate with the OpenAtlas team via the [ACDH](https://www.oeaw.ac.at/acdh), an institute of the [Austrian Academy of Sciences](https://www.oeaw.ac.at/), if budget is available. Discover our current and former cooperations [here](/cooperations).
 ::
 
-::text-section
----
-image: /assets/images/work-together.png
-image-side: right
-variant: default
----
+::text-section{image="/assets/images/work-together.png" variant="default" image-side="right"}
 ## How does OpenAtlas and OpenAtlas Discovery work together?
 
 Researchers manage their research data using an OpenAtlas instance and can then connect their Discovery instance via the API. This allows the data collected and structured in OpenAtlas to be made accessible and presented through OpenAtlas Discovery. Since the system uses [CIDOC CRM](https://cidoc-crm.org/) as an ontology, both data input and output can be adapted to different research projects, datasets, and use cases.
@@ -109,14 +102,12 @@ The data visualizations are automatically rendered, allowing the research data t
 
 ---
 
-##
-
 ::logo-list
 ---
 logos:
   - image: /assets/images/oeaw.png
     href: https://www.oeaw.ac.at/
-  - image: /assets/images/acdh.png
+  - image: /assets/images/acdh.svg
     href: https://www.oeaw.ac.at/acdh
   - image: /assets/images/imafo.png
     href: https://www.oeaw.ac.at/imafo/

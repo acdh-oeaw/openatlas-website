@@ -9,7 +9,7 @@ logos:
   - imageSource: /assets/images/fwf.png
   - imageSource: /assets/images/imafo.png
   - imageSource: /assets/images/uni_vienna.png
-  - imageSource: /assets/images/acdh.png
+  - imageSource: /assets/images/acdh.svg
 pi: Johannes Preiser-Kapeller
 presentationSite: https://discover-plas.openatlas.eu/
 statusTags:

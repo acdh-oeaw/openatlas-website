@@ -8,7 +8,7 @@ image: /assets/images/moving-byzantium.jpg
 logos:
   - imageSource: /assets/images/oeaw.png
   - imageSource: /assets/images/imafo.png
-  - imageSource: /assets/images/acdh.png
+  - imageSource: /assets/images/acdh.svg
   - imageSource: /assets/images/fwf.png
 pi: 'Claudia Rapp '
 presentationSite: https://mobyz-atlas.openatlas.eu/

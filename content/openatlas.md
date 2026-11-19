@@ -21,7 +21,8 @@ logo: /assets/images/oad-logo.svg
 
 Discover how OpenAtlas helps you manage, structure, and explore complex research data. From its flexible data model and standards-based approach to interactive maps and other tools, OpenAtlas provides researchers with a powerful way to connect and work with information across disciplines.
 
-:gap-block{size="20"}
+  :::gap-block{size="20"}
+  :::
 ::
 
 ## What is OpenAtlas?
@@ -40,10 +41,10 @@ OpenAtlas is not a stand-alone application but meant to be installed on a Linux 
 
 ::software-feature-small
 ---
-ascpectVideo: true
-reverse: true
 shadow: true
 image: /assets/images/openatlas-schema.png
+ascpectVideo: true
+reverse: true
 ---
 ### The Model
 
@@ -59,7 +60,7 @@ The data [model](https://demo.openatlas.eu/overview/model) specifies the structu
 
 ---
 
-::software-feature-small{ascpect-video shadow image="/assets/images/map.jpg"}
+::software-feature-small{shadow image="/assets/images/map.jpg" ascpect-video}
 ### Interactive Map
 
 Places with known location can be entered into an interactive map based on [Leaflet](https://leafletjs.com/), which features different view layers, allows for zooming, fullscreen mode, clustering, searching and much more. PostGIS is used for creating and manipulating spatial data. Therefore, it is possible to enter location as needed as multiple points, lines, areas and shapes.

@@ -6,7 +6,7 @@ image: /assets/images/projects/connec.jpg
 logos:
   - imageSource: /assets/images/rhul.png
   - imageSource: /assets/images/oeaw.png
-  - imageSource: /assets/images/acdh.png
+  - imageSource: /assets/images/acdh.svg
   - imageSource: /assets/images/erc.png
 statusTags:
   - concluded

@@ -59,10 +59,25 @@ const props = defineProps<{
 							:key="logo.imageSource"
 							class="h-10 flex items-center md:justify-center rounded bg-white"
 						>
-							<NuxtImg
+							<NuxtLink
+								v-if="logo.imageLink"
+								:href="logo.imageLink"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="flex h-10 lg:h-20 items-center justify-center"
+							>
+								<img
+									:src="logo.imageSource"
+									alt=""
+									class="block max-w-full h-full max-h-20 w-auto object-contain hover:opacity-80 transition duration-200"
+								/>
+							</NuxtLink>
+
+							<img
+								v-else
 								:src="logo.imageSource"
 								alt=""
-								class="max-w-full max-h-full object-contain"
+								class="block max-w-full h-full max-h-20 w-auto object-contain"
 							/>
 						</div>
 					</div>

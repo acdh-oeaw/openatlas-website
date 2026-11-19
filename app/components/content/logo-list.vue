@@ -25,12 +25,19 @@ const props = defineProps<{
 				rel="noopener noreferrer"
 				class="flex h-10 lg:h-20 items-center justify-center"
 			>
-				<NuxtImg
+				<img
 					:src="logo.image"
 					alt=""
-					class="max-w-full opacity-full max-h-full object-contain hover:opacity-80 transition duration-200"
+					class="block max-w-full h-full max-h-20 w-auto object-contain hover:opacity-80 transition duration-200"
 				/>
 			</NuxtLink>
+
+			<img
+				v-else
+				:src="logo.image"
+				alt=""
+				class="block max-w-full h-10 lg:h-20 w-auto object-contain"
+			/>
 		</div>
 	</div>
 </template>

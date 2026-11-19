@@ -9,7 +9,7 @@ image: /assets/images/projects/femcare.jpg
 logos:
   - imageSource: /assets/images/novetus.svg
   - imageSource: /assets/images/oeaw.png
-  - imageSource: /assets/images/acdh.png
+  - imageSource: /assets/images/acdh.svg
   - imageSource: /assets/images/fwf.png
 pi: Michaela Binder
 presentationSite: https://discover-femcarevienna.openatlas.eu/
