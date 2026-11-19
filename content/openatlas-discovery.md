@@ -118,6 +118,4 @@ Each visualization provides a different way of exploring and understanding the r
 
   By combining accessibility with practical data exploration, the table helps users orient themselves within the research material before moving on to more detailed analysis or visualizations.
   :::
-
-###  {#}
 ::
