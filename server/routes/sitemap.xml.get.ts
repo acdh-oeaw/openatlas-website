@@ -17,7 +17,7 @@ const routePaths = [
 	"/publications",
 	"/software",
 	"/team",
-	"/work-with-us",
+	"/collaborate",
 ] as const;
 
 export default defineLazyEventHandler(async () => {

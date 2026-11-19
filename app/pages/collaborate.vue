@@ -3,7 +3,7 @@ const route = useRoute();
 const t = useTranslations();
 
 usePageMetadata({
-	title: t("WorkWithUsPage.meta.title"),
+	title: t("CollaboratePage.meta.title"),
 });
 
 const contentPath = computed(() => {

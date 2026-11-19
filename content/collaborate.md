@@ -1,5 +1,5 @@
 ---
-title: Work with us!
+title: Collaborte!
 description: If you are interested in a cooperation regarding an open data project, feel free to contact us at openatlas@oeaw.ac.at. If possible, please provide some or all of the following information in your email. These help us to assess your project's specific needs and thus enable adequate consulting.
 ---
 

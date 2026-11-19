@@ -10,9 +10,9 @@ const links = computed(() => {
 			href: { path: "/cooperations" },
 			label: t("AppHeader.links.cooperations"),
 		},
-		"work with us": {
-			href: { path: "/work-with-us" },
-			label: t("AppHeader.links.work"),
+		collaborate: {
+			href: { path: "/collaborate" },
+			label: t("AppHeader.links.collaborate"),
 		},
 		team: {
 			href: { path: "/team" },

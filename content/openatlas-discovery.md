@@ -45,7 +45,7 @@ OpenAtlas Discovery consists of two parts: Firstly, the **pages that showcase yo
 
   This allows users to explore the research material in different ways. Together, the provided visualizations make complex research data easier to navigate, understand, and explore.
 
-  When [collaborating with us](/work-with-us), we can also develop new visualizations and features tailored to your research, allowing us to present your data in new and innovative ways.
+  When [collaborating with us](/collaborate), we can also develop new visualizations and features tailored to your research, allowing us to present your data in new and innovative ways.
   :::
 
   :::feature-card{color}

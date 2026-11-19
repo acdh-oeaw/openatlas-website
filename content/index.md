@@ -80,7 +80,7 @@ buttons:
     link: mailto:openatlas@oeaw.ac.at
     outline: false
   - title: More Information
-    link: /work-with-us
+    link: /collaborate
     outline: true
 shadow: false
 image: /assets/images/cooperation.png

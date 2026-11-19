@@ -8,7 +8,7 @@
 			"team": "Team",
 			"events": "Events",
 			"publications": "Publications",
-			"work": "Work with us!",
+			"collaborate": "Collaborate",
 			"software": "Software",
 			"news": "News",
 			"mission": "Mission Statement",
@@ -31,7 +31,7 @@
 			"team": "Team",
 			"events": "Events",
 			"publications": "Publications",
-			"work": "Work with us!"
+			"collaborate": "Collaborate!"
 		},
 		"navigation-main": "Main"
 	},
@@ -118,11 +118,11 @@
 		},
 		"title": "Software"
 	},
-	"WorkWithUsPage": {
+	"CollaboratePage": {
 		"meta": {
-			"title": "Work with us!"
+			"title": "Collaborate!"
 		},
-		"title": "Work with us!"
+		"title": "Collaborate!"
 	},
 	"Manifest": {
 		"description": "The OpenAtlas Project provides open-source software for various fields of humanities research, including history, archaeology and cultural heritage. Our tools are developed to support researchers and projects with different needs, approaches, and research questions.",
