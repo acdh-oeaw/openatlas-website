@@ -1,17 +1,20 @@
 title: MEDCEM
-statusTags:
-  - ongoing
-  - presentation-site
+credit: CC-BY-SA 4.0, Jan Belik
+description: The Medieval Cemeteries at the Periphery of the Carolingian World project deals with the digital collection and presentation of medieval cemeteries and it is based at the Archaeological Institute of the Czech Academy of Sciences in Prague. All published information is provided online and can be explored via a digital catalogue and within an interactive map. Cartographic visualisations as well as charts and plots are created dynamically based on real archaeological research data.
 domainTags:
   - anthropology
   - archaeology
-description: The Medieval Cemeteries at the Periphery of the Carolingian World project deals with the digital collection and presentation of medieval cemeteries and it is based at the Archaeological Institute of the Czech Academy of Sciences in Prague. All published information is provided online and can be explored via a digital catalogue and within an interactive map. Cartographic visualisations as well as charts and plots are created dynamically based on real archaeological research data.
-yearStart: '2019'
-yearEnd: ongoing
-presentationSite: https://thanados.net/
-pi: Stefan Eichert
+image: /assets/images/projects/medcem.png
 logos:
   - imageSource: /assets/images/msmt.png
+    imageLink: https://msmt.gov.cz/
   - imageSource: /assets/images/arup.jpg
-image: /assets/images/projects/medcem.png
-credit: CC-BY-SA 4.0, Jan Belik
+    imageLink: https://www.arup.cas.cz/
+pi: Stefan Eichert
+presentationSite: https://thanados.net/
+statusTags:
+  - ongoing
+  - presentation-site
+yearEnd: ongoing
+yearStart: '2019'
+projectLink: https://thanados.net/about/medcem

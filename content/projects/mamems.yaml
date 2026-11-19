@@ -1,19 +1,24 @@
 title: MAMEMS
+credit: CC-BY-SA 4.0, Jan Belik
 description: 'The Mount Athos in Medieval Eastern Mediterranean Society: Contextualizing the History of a Monastic Republic (ca. 850-1550) project will constitute the first comprehensive examination of the monastic communities of Mount Athos as independent actors in medieval Eastern Mediterranean society.'
-logos:
-  - imageSource: /assets/images/jgu.png
-  - imageSource: /assets/images/oeaw.png
-  - imageSource: /assets/images/acdh.svg
-  - imageSource: /assets/images/erc.png
-statusTags:
-  - concluded
-  - cooperation
-  - presentation-site
 domainTags:
   - history
   - prosopography
 image: /assets/images/projects/mamems.png
-credit: CC-BY-SA 4.0, Jan Belik
-yearStart: '2020'
-yearEnd: '2025'
+logos:
+  - imageSource: /assets/images/jgu.png
+    imageLink: https://www.uni-mainz.de/
+  - imageSource: /assets/images/oeaw.png
+    imageLink: https://www.oeaw.ac.at/
+  - imageSource: /assets/images/acdh.svg
+    imageLink: https://www.oeaw.ac.at/acdh/
+  - imageSource: /assets/images/erc.png
+    imageLink: https://erc.europa.eu/homepage
 pi: Zachary Chitwood
+statusTags:
+  - concluded
+  - cooperation
+  - presentation-site
+yearEnd: '2025'
+yearStart: '2020'
+projectLink: https://mamems.uni-mainz.de/

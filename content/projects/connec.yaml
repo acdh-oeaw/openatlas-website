@@ -1,22 +1,27 @@
 title: CONNEC
+credit: CC-BY-SA 4.0, Sapfo Psani
 description: |+
   The Connected Clerics: Building a Universal Church in the Late Antique West (380-604 CE) project analyses how a ‘universal’ Late Antique Church was constructed despite the context of political fragmentation that precipitated the end of the Western Roman Empire and its division into smaller polities.
 
+domainTags:
+  - history
+  - prosopography
 image: /assets/images/projects/connec.jpg
 logos:
   - imageSource: /assets/images/rhul.png
+    imageLink: https://www.royalholloway.ac.uk/
   - imageSource: /assets/images/oeaw.png
+    imageLink: https://www.oeaw.ac.at/
   - imageSource: /assets/images/acdh.svg
+    imageLink: https://www.oeaw.ac.at/acdh/
   - imageSource: /assets/images/erc.png
+    imageLink: https://erc.europa.eu/homepage
+pi: David Natal
+presentationSite: https://discover-connec.openatlas.eu/
 statusTags:
   - concluded
   - cooperation
   - presentation-site
-domainTags:
-  - history
-  - prosopography
-credit: CC-BY-SA 4.0, Sapfo Psani
-yearStart: '2018'
 yearEnd: '2022'
-presentationSite: https://discover-connec.openatlas.eu/
-pi: David Natal
+yearStart: '2018'
+projectLink: https://discover-connec.openatlas.eu/

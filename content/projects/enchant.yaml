@@ -6,12 +6,18 @@ domainTags:
 image: /assets/images/projects/enchant.png
 logos:
   - imageSource: /assets/images/oeaw.png
+    imageLink: https://www.oeaw.ac.at/
   - imageSource: /assets/images/fwf.png
+    imageLink: https://www.fwf.ac.at/
   - imageSource: /assets/images/imafo.png
+    imageLink: https://www.oeaw.ac.at/imafo/
   - imageSource: /assets/images/uni_vienna.png
+    imageLink: https://www.univie.ac.at/
   - imageSource: /assets/images/acdh.svg
+    imageLink: https://www.oeaw.ac.at/acdh/
 pi: Johannes Preiser-Kapeller
 presentationSite: https://discover-plas.openatlas.eu/
+projectLink: https://www.oeaw.ac.at/en/imafo/research/byzantine-research/byzantium-and-beyond/mobility-and-intercultural-contacts/entangled-charters-of-anatolia-1200-1300-enchant
 statusTags:
   - ongoing
   - cooperation

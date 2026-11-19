@@ -7,9 +7,13 @@ domainTags:
 image: /assets/images/thanados.png
 logos:
   - imageSource: /assets/images/oeaw.png
+    imageLink: https://www.oeaw.ac.at/
   - imageSource: /assets/images/oeai.png
+    imageLink: https://www.oeaw.ac.at/oeai/
   - imageSource: /assets/images/acdh.svg
+    imageLink: https://www.oeaw.ac.at/acdh/
   - imageSource: /assets/images/nhm.jpg
+    imageLink: https://www.nhm.at/
 pi: 'Stefan Eichert, Nina Richards '
 presentationSite: https://thanados.net/
 statusTags:
@@ -18,3 +22,4 @@ statusTags:
   - presentation-site
 yearEnd: '2021'
 yearStart: '2019'
+projectLink: https://thanados.net/

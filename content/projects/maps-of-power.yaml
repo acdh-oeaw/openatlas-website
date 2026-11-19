@@ -7,13 +7,20 @@ domainTags:
 image: /assets/images/mop.jpg
 logos:
   - imageSource: /assets/images/oeaw.png
+    imageLink: https://www.oeaw.ac.at/
   - imageSource: /assets/images/imafo.png
+    imageLink: https://www.oeaw.ac.at/imafo/
   - imageSource: /assets/images/fwf.png
+    imageLink: https://www.fwf.ac.at/
   - imageSource: /assets/images/byzantine-research.jpg
+    imageLink: https://www.oeaw.ac.at/byzanz/
   - imageSource: /assets/images/tib.png
+    imageLink: https://tib.oeaw.ac.at/
   - imageSource: /assets/images/uai.jpg
+    imageLink: http://www.uai-iua.org/en
 pi: 'Mihailo St. Popović '
 statusTags:
   - ongoing
 yearEnd: ongoing
 yearStart: '2019'
+projectLink: https://maps-of-power.oeaw.ac.at/

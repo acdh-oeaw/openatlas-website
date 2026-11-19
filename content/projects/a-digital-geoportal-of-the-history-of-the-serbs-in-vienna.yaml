@@ -7,15 +7,24 @@ domainTags:
 image: /assets/images/projects/geoportal.png
 logos:
   - imageSource: /assets/images/wien-kultur.jpg
+    imageLink: https://www.wien.gv.at/kontakt/ma07
   - imageSource: /assets/images/oeaw.png
+    imageLink: https://www.oeaw.ac.at
   - imageSource: /assets/images/imafo.png
+    imageLink: https://www.oeaw.ac.at/imafo/
   - imageSource: /assets/images/byzantine-research.jpg
+    imageLink: https://www.oeaw.ac.at/byzanz/
   - imageSource: /assets/images/ait.jpg
+    imageLink: https://www.ait.ac.at/
   - imageSource: /assets/images/bcm.png
+    imageLink: mgb.org.rs
   - imageSource: /assets/images/nls.jpg
+    imageLink: https://www.nb.rs/
   - imageSource: /assets/images/biblioteka-matice-srpske.png
+    imageLink: https://www.bms.rs/
 pi: 'Mihailo Popović '
 presentationSite: https://geoportal.orthodoxes-europa.at/
+projectLink: https://orthodoxes-wien.oeaw.ac.at/
 statusTags:
   - concluded
   - presentation-site

@@ -6,16 +6,25 @@ domainTags:
 image: /assets/images/projects/indigo.jpeg
 logos:
   - imageSource: /assets/images/lbi.jpg
+    imageLink: https://archpro.lbg.ac.at/
   - imageSource: /assets/images/TU_Wien.png
+    imageLink: https://www.tuwien.at/
   - imageSource: /assets/images/oeaw.png
+    imageLink: https://www.oeaw.ac.at/
   - imageSource: /assets/images/acdh.svg
+    imageLink: https://www.oeaw.ac.at/acdh/
   - imageSource: /assets/images/vienna.png
+    imageLink: https://www.wien.gv.at/
   - imageSource: /assets/images/spraycity2.png
+    imageLink: https://spraycity.at/
   - imageSource: /assets/images/gifle.jpg
+    imageLink: https://gifle.webs.upv.es/home.html
   - imageSource: /assets/images/vrvis.png
+    imageLink: https://www.vrvis.at/
 pi: 'Geert Verhoeven, Norbert Pfeifer '
 statusTags:
   - concluded
   - cooperation
 yearEnd: '2023'
 yearStart: '2021'
+projectLink: https://projectindigo.eu/

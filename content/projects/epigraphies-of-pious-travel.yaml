@@ -1,20 +1,25 @@
 title: Epigraphies Of Pious Travel
-description: The Epigraphies of Pious Travel project (FWF project I 5286-G25) collates and contextualises graffiti written by pilgrims in the eastern Mediterranean during the Byzantine period, c. 300 – 1500 CE. Through collaboration with OpenAtlas, the project will produce a digital corpus of material in the Greek language. Not reliant on a wealthy patron, graffiti written by pilgrims provides an insight into Byzantine religious ritual and the experiences of a larger cross-section of the population.
-yearStart: '2021'
-yearEnd: ongoing
 credit: CC-BY 4.0, Rachael Griffiths
-logos:
-  - imageSource: /assets/images/oeaw.png
-  - imageSource: /assets/images/imafo.png
-  - imageSource: /assets/images/acdh.svg
-  - imageSource: /assets/images/fwf.png
-statusTags:
-  - ongoing
-  - cooperation
-  - presentation-site
+description: The Epigraphies of Pious Travel project (FWF project I 5286-G25) collates and contextualises graffiti written by pilgrims in the eastern Mediterranean during the Byzantine period, c. 300 – 1500 CE. Through collaboration with OpenAtlas, the project will produce a digital corpus of material in the Greek language. Not reliant on a wealthy patron, graffiti written by pilgrims provides an insight into Byzantine religious ritual and the experiences of a larger cross-section of the population.
 domainTags:
   - history
   - epigraphy
 image: /assets/images/projects/pious-travel.png
-presentationSite: https://mobyz-atlas.openatlas.eu/
+logos:
+  - imageSource: /assets/images/oeaw.png
+    imageLink: https://www.oeaw.ac.at/
+  - imageSource: /assets/images/imafo.png
+    imageLink: https://www.oeaw.ac.at/imafo/
+  - imageSource: /assets/images/acdh.svg
+    imageLink: https://www.oeaw.ac.at/acdh/
+  - imageSource: /assets/images/fwf.png
+    imageLink: https://www.fwf.ac.at/
 pi: Rachael Helen Banes, Andreas Rhoby
+presentationSite: https://mobyz-atlas.openatlas.eu/
+statusTags:
+  - ongoing
+  - cooperation
+  - presentation-site
+yearEnd: ongoing
+yearStart: '2021'
+projectLink: https://www.oeaw.ac.at/en/byzanz/gesellschaft-und-landschaft/epigraphik/epigraphies-of-pious-travel

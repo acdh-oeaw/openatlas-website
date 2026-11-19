@@ -1,17 +1,20 @@
 title: MEDCON
+credit: CC-BY-SA 4.0, Jan Belik
+description: 'The Mapping Medieval Conflict project examined the explanatory power of concepts of social and spatial network analysis for phenomena of political conflict in medieval societies. '
+domainTags:
+  - history
+  - prosopography
+image: /assets/images/projects/medcon.png
+logos:
+  - imageSource: /assets/images/oeaw.png
+    imageLink: https://www.oeaw.ac.at/
+  - imageSource: /assets/images/imafo.png
+    imageLink: https://www.oeaw.ac.at/imafo/
+pi: ' Johannes Preiser-Kapeller '
 statusTags:
   - concluded
   - archived
   - cooperation
-domainTags:
-  - history
-  - prosopography
-description: 'The Mapping Medieval Conflict project examined the explanatory power of concepts of social and spatial network analysis for phenomena of political conflict in medieval societies. '
-yearStart: '2014'
 yearEnd: '2017'
-pi: ' Johannes Preiser-Kapeller '
-credit: CC-BY-SA 4.0, Jan Belik
-logos:
-  - imageSource: /assets/images/oeaw.png
-  - imageSource: /assets/images/imafo.png
-image: /assets/images/projects/medcon.png
+yearStart: '2014'
+projectLink: https://www.oeaw.ac.at/imafo/das-institut/detail/mapping-medieval-conflicts

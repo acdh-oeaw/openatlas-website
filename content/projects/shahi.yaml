@@ -6,11 +6,17 @@ domainTags:
 image: /assets/images/projects/shahi.jpg
 logos:
   - imageSource: /assets/images/uni_vienna.png
+    imageLink: https://www.univie.ac.at/
   - imageSource: /assets/images/oeaw.png
+    imageLink: https://www.oeaw.ac.at/
   - imageSource: /assets/images/acdh.svg
+    imageLink: https://www.oeaw.ac.at/acdh/
   - imageSource: /assets/images/fwf.png
+    imageLink: https://www.fwf.ac.at/
   - imageSource: /assets/images/khm.jpg
+    imageLink: https://www.khm.at/
   - imageSource: /assets/images/cirdis.jpg
+    imageLink: https://cirdis.univie.ac.at/
 pi: 'Deborah Klimburg-Salter; National research partner: Michael Alram '
 presentationSite: https://shahi.acdh.oeaw.ac.at/
 statusTags:
@@ -19,3 +25,4 @@ statusTags:
   - presentation-site
 yearEnd: '2023'
 yearStart: '2018'
+projectLink: https://shahimaterialculture.univie.ac.at/

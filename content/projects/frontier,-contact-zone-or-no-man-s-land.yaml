@@ -6,10 +6,15 @@ domainTags:
 image: /assets/images/projects/frontier.png
 logos:
   - imageSource: /assets/images/uni_vienna.png
+    imageLink: https://www.univie.ac.at/
   - imageSource: /assets/images/fwf.png
+    imageLink: https://www.fwf.ac.at/
   - imageSource: /assets/images/mu.png
+    imageLink: https://www.muni.cz/
   - imageSource: /assets/images/gacr.png
+    imageLink: https://gacr.cz/
 pi: 'Stefan Eichert, Jiří Macháček '
+projectLink: https://openatlas.eu/gkn/
 statusTags:
   - concluded
 yearEnd: '2017'

@@ -6,14 +6,20 @@ domainTags:
 image: /assets/images/projects/wheim.png
 logos:
   - imageSource: /assets/images/welterbe.png
+    imageLink: https://www.welterbe-salzkammergut.at/
   - imageSource: /assets/images/TU_Wien.png
+    imageLink: https://www.tuwien.at/
   - imageSource: /assets/images/oeaw.png
+    imageLink: https://www.oeaw.ac.at/
   - imageSource: /assets/images/acdh.svg
+    imageLink: https://www.oeaw.ac.at/acdh/
   - imageSource: /assets/images/BMWKMS.png
+    imageLink: https://www.bmwkms.gv.at/
 pi: Bernd Paulowitz
+presentationSite: ''
 statusTags:
   - ongoing
   - cooperation
 yearEnd: ongoing
 yearStart: '2025'
-presentationSite: ''
+projectLink: https://www.welterbe-salzkammergut.at/

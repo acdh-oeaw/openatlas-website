@@ -7,9 +7,13 @@ domainTags:
 image: /assets/images/projects/bitem.png
 logos:
   - imageSource: /assets/images/nhm.jpg
+    imageLink: nhm-wien.ac.at
   - imageSource: /assets/images/lbi.jpg
+    imageLink: https://archpro.lbg.ac.at/
   - imageSource: /assets/images/oeaw.png
+    imageLink: https://www.oeaw.ac.at/
   - imageSource: /assets/images/acdh.svg
+    imageLink: https://www.oeaw.ac.at/acdh/
 pi: Viola Winkler, Roland Filzwieser
 presentationSite: https://bitem.at/
 statusTags:
@@ -18,3 +22,4 @@ statusTags:
   - presentation-site
 yearEnd: '2025'
 yearStart: '2023'
+projectLink: https://bitem.at/

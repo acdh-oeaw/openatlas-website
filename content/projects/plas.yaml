@@ -1,14 +1,15 @@
 title: Plas
 credit: CC-BY-SA 4.0, Ekaterini Mitsiou and Johannes Preiser-Kapeller
 description: 'The Prosopography of the Lascarid Period project aims at creating a prosopographical database of Byzantium in the first half of the 13th century and mapping the complexities of a society in transition. '
-yearEnd: ongoing
-yearStart: '2018'
-statusTags:
-  - ongoing
-  - presentation-site
 domainTags:
   - history
   - prosopography
 image: /assets/images/projects/plas.jpg
-presentationSite: https://discover-plas.openatlas.eu/
 pi: 'Ekaterini Mitsiou '
+presentationSite: https://discover-plas.openatlas.eu/
+statusTags:
+  - ongoing
+  - presentation-site
+yearEnd: ongoing
+yearStart: '2018'
+projectLink: https://discover-plas.openatlas.eu/

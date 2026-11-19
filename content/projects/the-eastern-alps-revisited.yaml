@@ -1,15 +1,19 @@
 title: The Eastern Alps Revisited
+credit: CC-BY-SA 4.0, Dagmar Giesriegl
 description: The Eastern Alps Revisited project focused on the transformation of the Late Antique province of Noricum Mediterraneum into an area inhabited by a Slavic-speaking population that eventually became part of Bavaria.
-logos:
-  - imageSource: /assets/images/oeaw.png
-  - imageSource: /assets/images/imafo.png
-  - imageSource: /assets/images/fwf.png
-statusTags:
-  - concluded
 domainTags:
   - archaeology
 image: /assets/images/ostalpen.png
-credit: CC-BY-SA 4.0, Dagmar Giesriegl
-yearStart: '2012'
-yearEnd: '2016'
+logos:
+  - imageSource: /assets/images/oeaw.png
+    imageLink: https://www.oeaw.ac.at/
+  - imageSource: /assets/images/imafo.png
+    imageLink: https://www.oeaw.ac.at/imafo/
+  - imageSource: /assets/images/fwf.png
+    imageLink: https://www.fwf.ac.at/
 pi: 'Maximilian Diesenberger, Claudia Theune '
+statusTags:
+  - concluded
+yearEnd: '2016'
+yearStart: '2012'
+projectLink: https://www.oeaw.ac.at/imafo/forschung/historische-identitaetsforschung/projekte/weitere-projekte/ostalpenraum-revisited/

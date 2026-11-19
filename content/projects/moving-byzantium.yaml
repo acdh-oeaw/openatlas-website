@@ -7,9 +7,13 @@ domainTags:
 image: /assets/images/moving-byzantium.jpg
 logos:
   - imageSource: /assets/images/oeaw.png
+    imageLink: https://www.oeaw.ac.at/
   - imageSource: /assets/images/imafo.png
+    imageLink: https://www.oeaw.ac.at/imafo/
   - imageSource: /assets/images/acdh.svg
+    imageLink: https://www.oeaw.ac.at/acdh/
   - imageSource: /assets/images/fwf.png
+    imageLink: https://www.fwf.ac.at/
 pi: 'Claudia Rapp '
 presentationSite: https://mobyz-atlas.openatlas.eu/
 statusTags:
@@ -18,3 +22,4 @@ statusTags:
   - presentation-site
 yearEnd: '2020'
 yearStart: '2015'
+projectLink: https://www.oeaw.ac.at/en/imafo/research/byzantine-research/byzantium-and-beyond/mobility-and-intercultural-contacts/moving-byzantium

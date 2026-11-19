@@ -77,6 +77,7 @@ export default defineContentConfig({
 				title: z.string(),
 				description: property(z.string()).editor({ input: "textarea" }),
 				image: z.string(),
+				projectLink: z.string().optional(),
 				credit: z.string(),
 				yearStart: z.string(),
 				yearEnd: z.string().optional(),

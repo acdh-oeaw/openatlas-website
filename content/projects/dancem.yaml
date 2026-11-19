@@ -1,15 +1,17 @@
 title: DANCEM
+credit: CC-BY-SA 4.0. Birte Janzen/Kristin Opitz
 description: The Late antique cemeteries on the Danube project focuses on bringing together and analysing both published and self-compiled archaeological and anthropological data from late antique cemeteries on the Danube Limes and its hinterland between Passau and Budapest to gain deeper insights into the lives and deaths of the people.
-logos:
-  - imageSource: /assets/images/gwzo.jpg
-  - imageSource: /assets/images/stadtmuseum_st_poelten.jpg
-statusTags:
-  - concluded
 domainTags:
   - archaeology
   - anthropology
 image: /assets/images/projects/dancem.jpg
-credit: CC-BY-SA 4.0. Birte Janzen/Kristin Opitz
-yearStart: '2020'
-yearEnd: '2025'
+logos:
+  - imageSource: /assets/images/gwzo.jpg
+    imageLink: leibniz-gwzo.de
+  - imageSource: /assets/images/stadtmuseum_st_poelten.jpg
+    imageLink: http://stadtmuseum-stpoelten.at/
 pi: Kristin Opitz
+statusTags:
+  - concluded
+yearEnd: '2025'
+yearStart: '2020'

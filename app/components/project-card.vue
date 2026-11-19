@@ -13,8 +13,22 @@ const props = defineProps<{
 	<section v-if="props.project">
 		<div class="grid gap-6 md:gap-20 md:grid-cols-[auto_1fr] py-8">
 			<div class="mb-5 flex flex-col lg:items-center">
+				<NuxtLink
+					v-if="props.project.projectLink"
+					:href="props.project.projectLink"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="flex flex-col items-center hover:opacity-80 transition-opacity"
+				>
+					<NuxtImg
+						v-if="props.project.image"
+						:src="props.project.image"
+						:alt="props.project.title"
+						class="w-60 object-cover"
+					/>
+				</NuxtLink>
 				<NuxtImg
-					v-if="props.project.image"
+					v-else="props.project.image"
 					:src="props.project.image"
 					:alt="props.project.title"
 					class="w-60 object-cover"
@@ -26,7 +40,18 @@ const props = defineProps<{
 
 			<div class="flex flex-col gap-2 leading-[1.75]">
 				<div class="pb-2">
-					<h2 class="text-lg font-semibold mt-0.5">
+					<NuxtLink
+						v-if="props.project.projectLink"
+						:href="props.project.projectLink"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="font-medium rounded-xs outline-link/25 focus-visible:outline-3 focus-visible:has-[>code]:outline-0 [&>code]:border-dashed [&>code]:outline-link/25 focus-visible:[&>code]:outline-3 [&>code]:transition-colors focus-visible:[&>code]:border-link transition-colors"
+					>
+						<h2 class="text-lg font-semibold mt-0.5">
+							{{ props.project.title }}
+						</h2>
+					</NuxtLink>
+					<h2 v-else class="text-lg font-semibold mt-0.5">
 						{{ props.project.title }}
 					</h2>
 					<div class="mb-5">
@@ -69,7 +94,7 @@ const props = defineProps<{
 								<img
 									:src="logo.imageSource"
 									alt=""
-									class="block max-w-full h-full max-h-20 w-auto object-contain hover:opacity-80 transition duration-200"
+									class="block max-w-full h-10 w-auto object-contain hover:opacity-80 transition duration-200"
 								/>
 							</NuxtLink>
 
@@ -77,7 +102,7 @@ const props = defineProps<{
 								v-else
 								:src="logo.imageSource"
 								alt=""
-								class="block max-w-full h-full max-h-20 w-auto object-contain"
+								class="block max-w-full h-10 w-auto object-contain"
 							/>
 						</div>
 					</div>
