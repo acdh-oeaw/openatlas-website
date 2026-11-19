@@ -112,14 +112,14 @@
 		},
 		"runtime": {
 			"name": "node",
-			"version": "^24",
+			"version": "26.12.1",
 			"onFail": "download"
 		}
 	},
 	"engines": {
 		"runtime": {
 			"name": "node",
-			"version": "^24",
+			"version": "26.12.1",
 			"onFail": "download"
 		}
 	}
