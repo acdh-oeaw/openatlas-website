@@ -34,7 +34,7 @@ const props = defineProps<{
 					:variant="index % 2 === 0 ? 'outline' : 'solid'"
 					size="xl"
 					:to="button.link"
-					target="_blank"
+					:target="button.link.startsWith('http') ? '_blank' : undefined"
 				>
 					{{ button.title }}
 				</UButton>
