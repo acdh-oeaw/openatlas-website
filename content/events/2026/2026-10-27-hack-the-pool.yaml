@@ -1,9 +1,10 @@
 city: Vienna
 country: Austria
 date: '2026-11-18'
-event: Connect the Dots, Query the World
-eventLink: https://www.oeaw.ac.at/acdh/newsevents/event-series/acdh-research-day-10
-institution: Austrian Centre for Digital Humanities - Austrian Academy of Sciences
 documents:
   - label: Presentation
+    url: /assets/posters-and-presentations/2026-11-18-connecting-dots.pdf
+event: Connect the Dots, Query the World
+eventLink: https://www.oeaw.ac.at/acdh/newsevents/event-series/acdh-research-day-10
 eventTitle: 'Connecting the Dots Without the Drama: Usable CIDOC CRM in OpenAtlas'
+institution: Austrian Centre for Digital Humanities - Austrian Academy of Sciences

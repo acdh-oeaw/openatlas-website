@@ -69,9 +69,7 @@ const latestNewsDate = computed(() => {
 					</span>
 
 					<NuxtLink
-						v-if="latestNews?.link"
-						:href="latestNews.link"
-						target="_blank"
+						href="/news"
 						class="mt-2 block transition-opacity hover:opacity-80 cursour-pointer"
 					>
 						<span class="text-sm font-semibold text-primary opacity-80"> read more </span>
