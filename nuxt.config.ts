@@ -138,7 +138,6 @@ export default defineNuxtConfig({
 			owner: "acdh-oeaw",
 			repo: "openatlas-website",
 			branch: "main",
-			rootDir: "content",
 		},
 		git: {
 			commit: {
