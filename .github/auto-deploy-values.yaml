@@ -21,7 +21,6 @@ ingress:
   path: "/"
   className: "traefik"
   annotations:
-    # For domains outside `*.acdh.oeaw.ac.at` and `*.acdh-dev.oeaw.ac.at`.
     cert-manager.io/cluster-issuer: "letsencrypt-prod"
     acme.cert-manager.io/http01-ingress-ingressclassname: "traefik"
     traefik.ingress.kubernetes.io/router.middlewares: kube-system-redirect-https@kubernetescrd,kube-system-global-error-pages@kubernetescrd,kube-system-compress@kubernetescrd
